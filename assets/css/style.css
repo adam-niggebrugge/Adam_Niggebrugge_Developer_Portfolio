@@ -1,8 +1,126 @@
-/* Standard general setting on all the fonts
-*/
+  /* color pallete options for consistency */
+:root {
+  --dark-background: #103214;
+  --dark-contrast: #A98583;
+  --neutral:#246C67; 
+  --light-background: #4CD1A9;
+  --light-contrast: #FF5900;
+  --light: #E5EBEA;
+  --bland: #DBD9DB;
+  --bland-dark: #747572;
+}
+
+/* Standard general setting on all the fonts*/
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+  background-image: linear-gradient(to bottom right, var(--bland), var(--bland-dark) );
+  background-color: var(--bland-dark); /* For browsers that do not support gradient*/
+  background-repeat: no-repeat;
+}
+
+nav{
+
+}
+
+header{
+  padding: 1em;
+  text-align: center;
+  background-color: inherit;
+  background-image: inherit;
+}
+
+
+/*Only effects h2 element within the header*/
+header > h2 { 
+  position:relative;
+  margin: -.8rem 10% 0 40%; /*Push block element up into preceding element with negative attribute, fix element off center of right at all screen sizes*/
+  width: 40%; /* Reduce the size of the block element*/
+}
+
+header > figure{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+main {
+   margin: 2rem auto;
+}
+
+/* General settings for the footer element display */
+footer{
+  margin: 1em auto 1.5em;
+  padding: 1.2em 2em 1.2em;
+}
+
+footer > *{
+  background-color: var(--netural);
+  text-align: center;
+}
+
+footer > p{
+  padding: .2em;
+}
+
+/* span element class used to have name pop */
+.header-name{
+  background-image: none;
+  color: var(--light-contrast);
+}
+
+/* Apply a dark banner style, rounded edges */
+.banner{
+  background-color: var(--dark-background); /* For browsers that do not support gradient*/
+  background-image: linear-gradient(0deg, var(--dark-background),  var(--neutral), var(--light-background) );
+  color: var(--light);
+  padding: .75em;
+  border-radius: 15px;
+}
+
+/*  Apply a contrasting banner color, style the same with rounded edges */
+.banner-alt{
+  background-color: var(--light-background); /* For browsers that do not support gradient*/
+  background-image: linear-gradient(120deg, var(--light-background), var(--neutral), var(--dark-background), var(--light-background) );
+  color: var(--light);
+  padding: .5em;
+  border-radius: 15px;
+  border: ridge  var(--light-contrast) 5px;
+}
+
+
+
+/*Dominant visual of page
+*/
+.profile {
+  width: 100%;
+  max-width: 25em;
+  max-height: 25em;
+  border-radius: 15px;
+}
+
+.profile-caption{
+  background-color: var(--dark-background);
+  color: var(--light);
+  text-align:right;
+  padding: 1em;
+  border-radius: 15px;
+  font-size: 60%;
+  margin: -12em 0 10em 12em;
+  
+}
+
+/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+.card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
@@ -20,9 +138,7 @@
   
   /* media query for larger screens */
   @media screen and (min-width: 992px) {
-    header {
-      width: 75%;
-    }
+
   
     .card-column {
       flex: 0 0 33.333%;

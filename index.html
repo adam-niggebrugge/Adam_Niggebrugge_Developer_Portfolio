@@ -6,22 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <link rel="icon" type="image/png" href="assets/images/hand sketch thumbs up.png">
     <!-- Replaced generic Tab title of Website with company name and three main sections v1.1.0 -->
     <title>Developer: A. Niggebrugge</title>
 </head>
 
 <body>
     <!-- Replaced div with semantic html for accessibilty standards v1.1.0 -->
-    <header class="">
-        <h1>Welcome, I am <span class="">Adam Niggebrugge</span></h1>
-        <h2>A Full Stack Web Developer</h2>
-        <figure>
-            <img class="hero" alt="Black and White Profile Picture" src="/assets/images/ProfilePic.jpg">
-            <figcaption class="hero-caption">I don't always look this sharp, but for special days I do.</figcaption>
-        </figure>
-    
-    <!-- quick navigation to content sections on the page, semantic html v1.1.0 -->   
     <nav>
         <ul>
             <li>
@@ -35,40 +26,54 @@
             </li>
         </ul>
     </nav>
+    
+    <header>
+        <h1 class="banner">Welcome, I am <span class="header-name">Adam Niggebrugge</span></h1>
+        <h2 class="banner-alt">A Full Stack Web Developer</h2>
+        <figure>
+            <img class="profile" alt="Black and White Profile Picture" src="/assets/images/ProfilePic.jpg">
+            <figcaption class="profile-caption">I don't always look this sharp, but for special days I do.</figcaption>
+        </figure>
+    
+    <!-- quick navigation to content sections on the page, semantic html v1.1.0 -->   
     </header>
 
     <!-- Here is our page's main content, semantic html for accessibilty standards v1.1.0-->
     <main>
     
-        <!--previously a div Used to display an image
-            , semantic html of figure added for accessibilty standards v1.1.0.-->
-
-
         <!-- Here an article since this content could be a blog or something
             Change div to semantic html article for accessibilty standards v1.1.0-->
-        <article>
-            <!-- Here a section of the article focused on search engine opt
-                Change div to semantic html section for accessibilty standards v1.1.0
-                id attribute was missing from section, causing link failure -->
-
-            <!-- Here a section of the article focused on online perception
+        <article class="">
+                <!-- Here a section of the article focused on online perception
                 Change div to semantic html section for accessibilty standards v1.1.0-->
-            <section id="" class="">
+            <section id="" class="card-column">
+                <div class="card-content">
+                    <img src="./assets/images/" class="" alt="Online Reputation Management Image" />
+                    <h2 class="banner-alt">Empty</h2>
+                    <p>temp</p>
+                </div>
+            </section>
+            <section id="" class="card-column">
                 <img src="./assets/images/" class="" alt="Online Reputation Management Image" />
-                <h2>Empty</h2>
-                <p></p>
+                <h2 class="banner-alt">Empty</h2>
+                <p>temp</p>
+            </section>
+            <section id="" class="card-column">
+                <img src="./assets/images/" class="" alt="Online Reputation Management Image" />
+                <h2 class="banner-alt">Empty</h2>
+                <p>temp</p>
             </section>
 
         </article>
         
         <!-- Supplemental information being provided accessibilty standards
             dropped class="benefits" v1.1.0-->
-        <aside>
+        <aside class="right-float">
             <!-- Here a section of the aside focused -->
             <section>
-                <h3></h3>
+                <h3 class="banner-alt">Personal</h3>
                 <img />
-                <p></p>
+                <p>Thank you for taking the time to view my work. If you would like to know more about me please visit my bio page.</p>
             </section>
         </aside>
     
@@ -76,12 +81,9 @@
      
     <!-- Here is our page's footer content, updated copyright to this year?, 
         semantic html for accessibilty standards, changed from div to footer v1.1.0-->
-    <footer>
-        
-        <h4></h4>
-        <p>
-            
-        </p>
+    <footer class="banner">    
+        <h4>Developed by I. A. Niggebrugge </h4>
+        <p>Copyright 2021</p>
     </footer>
 </body>
 
