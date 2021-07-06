@@ -4,17 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" type="image/png" href="assets/images/hand sketch thumbs up.png">
-    <!-- Replaced generic Tab title of Website with company name and three main sections v1.1.0 -->
+  <!-- Hints of a favicon,-->  
+  <link rel="icon" type="image/png" href="assets/images/hand sketch thumbs up.png">
     <title>Developer: A. Niggebrugge</title>
 </head>
 
-<body>
-    <!-- Replaced div with semantic html for accessibilty standards v1.1.0 -->
-    <nav>
+<body> 
+
+ 
+    <header>
+        <h1 class="banner page title">Welcome, I am <span class="header-name">Adam Niggebrugge</span></h1>
+        <h2 class="banner-alt">A Full Stack Web Developer</h2>    
+    </header>
+
+    <nav id="navbar" class="banner">
         <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
             <li>
                 <a href="">Bio</a>
             </li>
@@ -26,56 +35,66 @@
             </li>
         </ul>
     </nav>
-    
-    <header>
-        <h1 class="banner">Welcome, I am <span class="header-name">Adam Niggebrugge</span></h1>
-        <h2 class="banner-alt">A Full Stack Web Developer</h2>
-        <figure>
-            <img class="profile" alt="Black and White Profile Picture" src="/assets/images/ProfilePic.jpg">
-            <figcaption class="profile-caption">I don't always look this sharp, but for special days I do.</figcaption>
-        </figure>
-    
-    <!-- quick navigation to content sections on the page, semantic html v1.1.0 -->   
-    </header>
-
     <!-- Here is our page's main content, semantic html for accessibilty standards v1.1.0-->
     <main>
-    
-        <!-- Here an article since this content could be a blog or something
-            Change div to semantic html article for accessibilty standards v1.1.0-->
-        <article class="">
-                <!-- Here a section of the article focused on online perception
-                Change div to semantic html section for accessibilty standards v1.1.0-->
-            <section id="" class="card-column">
-                <div class="card-content">
-                    <img src="./assets/images/" class="" alt="Online Reputation Management Image" />
-                    <h2 class="banner-alt">Empty</h2>
-                    <p>temp</p>
-                </div>
-            </section>
-            <section id="" class="card-column">
-                <img src="./assets/images/" class="" alt="Online Reputation Management Image" />
-                <h2 class="banner-alt">Empty</h2>
-                <p>temp</p>
-            </section>
-            <section id="" class="card-column">
-                <img src="./assets/images/" class="" alt="Online Reputation Management Image" />
-                <h2 class="banner-alt">Empty</h2>
-                <p>temp</p>
-            </section>
-
-        </article>
         
-        <!-- Supplemental information being provided accessibilty standards
-            dropped class="benefits" v1.1.0-->
-        <aside class="right-float">
-            <!-- Here a section of the aside focused -->
-            <section>
-                <h3 class="banner-alt">Personal</h3>
-                <img />
-                <p>Thank you for taking the time to view my work. If you would like to know more about me please visit my bio page.</p>
-            </section>
-        </aside>
+            <aside class="left-float">
+                <figure class="card-column">
+                    <img class="profile card-body" alt="Black and White Profile Picture" src="/assets/images/ProfilePic.jpg">
+                    <figcaption class="profile-caption card-body">I don't always look this sharp, but for special days I do.</figcaption>
+                </figure>
+                    <!-- Here a bio section of the aside focused -->
+                <section class="card-column">
+                    <h3 class="banner-alt card-header">Personal</h3>
+                    <div class="card-body">    
+                        <p>Thank you for taking the time to view my work. If you would like to know more about me please visit my bio page.</p>
+                    </div>
+                </section>
+            </aside>
+        
+        
+       
+            <!-- Here an article since this content could be a blog or something-->
+            <article class="row justify-center">
+                    <!-- Here a section of the article focused on online perception
+                    Change div to semantic html section for accessibilty standards v1.1.0-->
+                <section id="HTML-semantic" class="card-column">
+                    <figure class="card code-card">
+                        <h2 class="banner-alt card-header">HTML</h2>
+                        <img src="./assets/images/Upper-Horiseon-HTML-Static.jpg" class="card-body" alt="Shows HTML accessible site" />   
+                        <div class="card-body">
+                            <p>A display of semantical HTML for improved accessibilty</p>
+                        </div>    
+                    </figure>
+                </section>
+                <section id="" class="card-column">
+                    <figure class="card code-card">
+                        <h2 class="banner card-header">CSS</h2>
+                        <img src="./assets/images/" class="card-body" alt="Online Reputation Management Image" />   
+                        <div class="card-body">
+                            <p>temp</p>
+                        </div>    
+                    </figure>
+                </section>            
+                <section id="" class="card-column">
+                    <figure class="card code-card">
+                        <h2 class="banner-alt card-header">Javascript</h2>
+                        <img src="./assets/images/" class="card-body" alt="Online Reputation Management Image" />   
+                        <div class="card-body">
+                            <p>temp</p>
+                        </div>    
+                    </figure>
+                </section>
+                <section id="" class="card-column">
+                    <figure class="card code-card">
+                        <h2 class="banner card-header">SQL Backend</h2>
+                        <img src="./assets/images/" class="card-body" alt="Online Reputation Management Image" />   
+                        <div class="card-body">
+                            <p>temp</p>
+                        </div>    
+                    </figure>
+                </section>
+            </article>
     
     </main>
      
@@ -85,6 +104,7 @@
         <h4>Developed by I. A. Niggebrugge </h4>
         <p>Copyright 2021</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
