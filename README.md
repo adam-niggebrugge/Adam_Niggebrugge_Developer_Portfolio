@@ -4,7 +4,8 @@
 I want to give perspective employers or clients a chance to evaluate my work from a single convenient place.
 
 ## Preview
-![web site action](https://media.giphy.com/media/HFbRozG90U3uNlsOkc/source.gif)
+
+![web site action](https://media.giphy.com/media/HFbRozG90U3uNlsOkc/giphy.gif)
 
 ### Live URL
 [Click Here](https://adam-niggebrugge.github.io/Adam_Niggebrugge_Developer_Portfolio/)
