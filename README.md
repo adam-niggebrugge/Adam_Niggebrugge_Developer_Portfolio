@@ -1,4 +1,4 @@
-# Welcom to Adam Niggebrugge's Developer Portfolio
+# Welcome to Adam Niggebrugge's Developer Portfolio
 
 ## Overview
 I want to give perspective employers or clients a chance to evaluate my work from a single convient place.
