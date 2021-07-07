@@ -5,7 +5,7 @@ I want to give perspective employers or clients a chance to evaluate my work fro
 
 ## Preview
 
-![web site action](https://media.giphy.com/media/HFbRozG90U3uNlsOkc/giphy.gif)
+![web site action](https://media.giphy.com/media/sM1TDXauC1htVxb3VK/giphy.gif)
 
 ### Live URL
 [Click Here](https://adam-niggebrugge.github.io/Adam_Niggebrugge_Developer_Portfolio/)
