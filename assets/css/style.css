@@ -215,7 +215,7 @@ img{
   color: var(--dark-background);
 
   /* outline is like border, but on the outside of the box instead of inside */
-  outline: 2px inset var(--dark-highlight);
+  outline: 2px inset var(--highlight);
   outline-offset: -2px;
   transition: all 0.5s ease-in-out;
 }
@@ -237,4 +237,43 @@ img{
 
 .card-body{
   font-size: 2.5em;
+}
+
+
+/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px var(--attention-highlight), 0 0 15px var(--attention-highlight);
+}
+
+/* each card's code block grows to the height of the largest code block on the page, making each card even in height */
+.code-card .code-block {
+  flex-grow: 1;
+}
+
+/* each card's code block grows to the height of the largest code block on the page, making each card even in height */
+.code-card .code-block {
+  flex-grow: 1;
+}
+
+.code-card pre {
+  /* set styles to make it so code wraps in <pre> instead of overflowing */
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 4;
+  padding: 1.2rem 1rem;
+  color: var(--highlight);
+  border-radius: 8px;
+  /* use linear-gradient() function to create a fading background  */
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+/* on <pre> click, select all contents so the code is highlighted */
+.code-card pre:active {
+  user-select: all;
 }
