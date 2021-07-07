@@ -62,6 +62,7 @@
 html {
   /* sets 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
   font-size: 62.5%;
+  background-color: var(--light);
 }
 /* Set each header to different font size */
 h1 {
@@ -276,4 +277,15 @@ img{
 /* on <pre> click, select all contents so the code is highlighted */
 .code-card pre:active {
   user-select: all;
+}
+
+.contact{
+  text-align: center;
+}
+
+#personal{
+  margin: 2em;
+  background-color: var(--neutral);
+  padding: 3em;
+}
 }
