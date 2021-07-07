@@ -1,7 +1,7 @@
 # Welcome to Adam Niggebrugge's Developer Portfolio
 
 ## Overview
-I want to give perspective employers or clients a chance to evaluate my work from a single convient place.
+I want to give perspective employers or clients a chance to evaluate my work from a single convenient place.
 
 ## Preview
 ![web site action](https://media.giphy.com/media/O9uwj88q7WPTgExitN/giphy.gif)
