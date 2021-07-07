@@ -19,22 +19,61 @@
     .card-column:first-child {
       flex-grow: 2;
     }
+    .navbar{
+      font-size: .8em;
+    }
+    /* Set each header to different font size */
+    h1 {
+      font-size: 1.5em;
+    }
 
-  }
+    h2 {
+    font-size: .8rem;
+    }
+
+    h3 {
+    font-size: .7rem;
+    }
+}
   
   /* media query for larger screens */
   @media screen and (min-width: 992px) {
-
+    .navbar{
+      font-size: 1em;
+    }
     .card-column {
       flex: 0 0 33.333%;
       max-width: 33.333%;
     }
-  }
+    /* Set each header to different font size */
+    h1 {
+      font-size: 2em;
+    }
 
-header > h1 {
-  padding: -10em 0 5em 0;
-  position:absolute;
-  font-size: 4.5em;
+    h2 {
+    font-size: 1.1rem;
+    }
+
+    h3 {
+    font-size: .9rem;
+    }
+}
+
+html {
+  /* sets 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 62.5%;
+}
+/* Set each header to different font size */
+h1 {
+   font-size: 4.5em;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 nav{
@@ -49,15 +88,27 @@ nav > ul{
 nav > ul > li > a{
     padding: .4em;
     color: var(--highlight);
-    font-size: 2em;
+    font-size: 3.5em;
 }
 
 figure{
   padding: 2em;
 }
 
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 article{
- width: 85%;
+ flex-grow: 4;
+ flex: 0 0 75%;
+}
+
+aside{
+  flex: 0 0 25%;
+  flex-grow: 1;
 }
 
 /* General settings for the footer element display */
@@ -73,6 +124,16 @@ footer > *{
 
 footer > p{
   padding: .2em;
+}
+
+/*an image banner of a panaroma shot, really large*/
+.landing-banner{
+   max-width: 100%; /* Makes sure the entire banner is shown */
+}
+
+.page-title{
+  margin: -4em 0 2.5em 5em;
+  color: var(--dark);
 }
 
 /* Apply a dark banner style, rounded edges */
@@ -102,15 +163,25 @@ footer > p{
   flex-direction: row;
 }
 
-
 .left-float{
   border-right: double 20px var(--dark-highlight);
   margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .profile {
-  max-height: 25em;
+  max-height: 50em;
   border-radius: 15px;
+}
+
+.profile-caption{
+  color: var(--highlight);
+  padding: .8em;
+  font-size: 2em;
+  margin: -6em 0 7em 0;
+  flex: 1 4 30%;
 }
 
 /*Flip this on once scrolling occurs to keep nav bar at top*/
