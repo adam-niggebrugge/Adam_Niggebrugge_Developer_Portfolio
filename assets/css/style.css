@@ -288,4 +288,16 @@ img{
   background-color: var(--neutral);
   padding: 3em;
 }
+
+/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
 }
