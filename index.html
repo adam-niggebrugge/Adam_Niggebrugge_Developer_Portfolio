@@ -15,34 +15,45 @@
 
  
     <header>
-        <img class="landing-banner" src="assets/images/whiteMountainsPanShot.jpg">   
-        <h1 class="page-title">Welcome, I am <span class="header-name"> Adam Niggebrugge</span></h1>
-       
-        <h2 class="banner-alt">A Full Stack Web Developer</h2>    
+        <img id="home" class="landing-banner" src="assets/images/whiteMountainsPanShot.jpg">   
+        <h1 class="page-title">Welcome, I am <span class="header-name"> Adam Niggebrugge</span></h1>      
+        <h2 class="banner-alt scale-down">A Full Stack Web Developer</h2>    
     </header>
 
     <nav id="navbar" class="navbar">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Work Portfolio</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#personal">About</a></li>
+            <li><a href="#HTML-semantic">Work Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
     <!-- Here is our page's main content, semantic html for accessibilty standards-->
     <main>
         
             <aside class="left-float card-column">
-                <figure class="">
+                <figure>
                     <img class="profile" alt="Black and White Profile Picture" src="/assets/images/ProfilePic.jpg">
                     <figcaption class="profile-caption">I don't always look this sharp, but for special days I do.</figcaption>
                 </figure>
-                    <!-- Here a bio section of the aside focused -->
-                <section class="">
+                <section id="personal">
                     <h3 class="banner-alt">Personal</h3>
-                    <div class="card-body">    
+                    <div  class="card-body">    
                         <p>Thank you for taking the time to view my work. If you would like to know more about me please visit my bio page.</p>
+                        <a href="https://adam-niggebrugge.github.io/prework-about-me/">More about me</a>
                     </div>
+                </section>
+                <section id="Contact">
+                    <figure class="card code-card">
+                        <h3 class="banner card-header">Contact Me</h3>  
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="http://www.github.com/adam-niggebrugge">Github</a></li>
+                                <li><a href="mailto: adam.niggebrugge@gmail.com">Email Me</a></li>
+                                <li><a href="tel:18592216993">Call me</a></li>
+                            </ul>
+                        </div>    
+                    </figure>
                 </section>
             </aside>
         
@@ -58,31 +69,34 @@
                         <img src="./assets/images/Upper-Horiseon-HTML-Static.jpg" class="full-body card-body" alt="Shows HTML accessible site" />   
                         <div class="card-body">
                             <p>A display of semantical HTML for improved accessibilty</p>
+                            <a href="https://adam-niggebrugge.github.io/01-Horiseon_Refactored/#online-reputation-management">Check it Out</a>
                         </div>    
                     </figure>
                 </section>
-                <section id="" class="card-column">
+                <section id="css-show" class="card-column">
                     <figure class="card code-card">
                         <h2 class="banner card-header">CSS</h2>
-                        <img src="./assets/images/" class="card-body" alt="Online Reputation Management Image" />   
+                        <img src="./assets/images/CSS-flex-box.jpg" class="card-body" alt="Online Reputation Management Image" />   
                         <div class="card-body">
-                            <p>temp</p>
+                            <p>This page is all about tricks with CSS. No javascript here, keep it light, keep it cool</p>
+                            <a href="">Coming Soon</a>
                         </div>    
                     </figure>
                 </section>            
-                <section id="" class="card-column">
+                <section id="Javascript" class="card-column">
                     <figure class="card code-card">
                         <h2 class="banner-alt card-header">Javascript</h2>
-                        <img src="./assets/images/" class="card-body" alt="Online Reputation Management Image" />   
+                        <img src="./assets/images/javascript-logo.png" class="card-body" alt="Online Reputation Management Image" />   
                         <div class="card-body">
-                            <p>temp</p>
+                            <p>What can one do with Javascript. Understanding scripting languages is key for any web developer.</p>
+                            <a href="">Coming Soon</a>
                         </div>    
                     </figure>
                 </section>
-                <section id="" class="card-column">
+                <section id="SQL" class="card-column">
                     <figure class="card code-card">
                         <h2 class="banner card-header">SQL Backend</h2>
-                        <img src="./assets/images/" class="card-body" alt="Online Reputation Management Image" />   
+                        <img src="./assets/images/sql-crane.jpg" class="card-body" alt="Online Reputation Management Image" />   
                         <div class="card-body">
                             <p>temp</p>
                         </div>    

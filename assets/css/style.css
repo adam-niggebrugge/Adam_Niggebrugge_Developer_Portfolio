@@ -76,6 +76,13 @@ h3 {
   font-size: 3rem;
 }
 
+header {
+  width: 96%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
 nav{
   width: 100%;
   display: flex;
@@ -96,18 +103,17 @@ figure{
 }
 
 main{
+  width: 96%;
+  margin: 2rem auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 article{
  flex-grow: 4;
- flex: 0 0 75%;
 }
 
 aside{
-  flex: 0 0 25%;
   flex-grow: 1;
 }
 
@@ -127,7 +133,7 @@ footer > p{
 }
 
 /*an image banner of a panaroma shot, really large*/
-.landing-banner{
+img{
    max-width: 100%; /* Makes sure the entire banner is shown */
 }
 
@@ -165,15 +171,14 @@ footer > p{
 
 .left-float{
   border-right: double 20px var(--dark-highlight);
-  margin-right: 2em;
-  display: flex;
   flex-direction: column;
-  
+  justify-content: center;
 }
 
 .profile {
-  max-height: 50em;
   border-radius: 15px;
+  margin-right: 1em;
+  flex: 1 4 30%;
 }
 
 .profile-caption{
@@ -188,4 +193,48 @@ footer > p{
 .sticky {
   position: fixed;
   top: 0;
+  margin: 1.2em;
+}
+
+/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+.card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+/* make each code card a flexbox column to align and justify content within it */
+.code-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: var(--dark-background);
+
+  /* outline is like border, but on the outside of the box instead of inside */
+  outline: 2px inset var(--dark-highlight);
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.left-float{
+  border-right: double 20px var(--highlight);
+  margin-right: 2em;
+}
+
+.header-name{
+  color: var(--highlight);
+  font-style: oblique;
+}
+
+.scale-down{
+  width: 40%;
+  margin:  -2em 0 .5em 10em;
+}
+
+.card-body{
+  font-size: 2.5em;
 }
