@@ -1,11 +1,10 @@
+//This creates a listner event that will call
+window.onscroll = function() {stickyElement()};
 
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
 
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
+function stickyElement() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
