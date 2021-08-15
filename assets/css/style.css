@@ -9,16 +9,6 @@
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    /* select the last child to grow to full width if it has space to grow */
-    .card-column:first-child {
-      flex-grow: 2;
-    }
     .navbar{
       font-size: .8em;
     }
@@ -41,10 +31,7 @@
     .navbar{
       font-size: 1em;
     }
-    .card-column {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }
+
     /* Set each header to different font size */
     h1 {
       font-size: 2em;
@@ -77,69 +64,18 @@ h3 {
   font-size: 3rem;
 }
 
-header {
-  width: 96%;
-  margin: 0 auto;
-  padding: 2.5rem;
-  text-align: center;
-}
-
-nav{
-  width: 100%;
-  display: flex;
-}
-
-nav > ul{
-  display:flex;
-}
-
 nav > ul > li > a{
-    padding: .4em;
     color: var(--highlight);
     font-size: 3.5em;
 }
 
-figure{
-  padding: 2em;
-}
-
-main{
-  width: 96%;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-article{
- flex-grow: 4;
-}
-
-aside{
-  flex-grow: 1;
-}
-
 /* General settings for the footer element display */
-footer{
-  margin: 1em auto 1.5em;
-  padding: 1.2em 2em 1.2em;
-}
-
 footer > *{
   background-color: var(--netural);
   text-align: center;
 }
 
-footer > p{
-  padding: .2em;
-}
-
-/*an image banner of a panaroma shot, really large*/
-img{
-   max-width: 100%; /* Makes sure the entire banner is shown */
-}
-
 .page-title{
-  margin: -4em 0 2.5em 5em;
   color: var(--dark);
 }
 
@@ -148,8 +84,6 @@ img{
   background-color: var(--dark); /* For browsers that do not support gradient*/
   background-image: linear-gradient(-120deg, var(--light),  var(--neutral), var(--dark) );
   color: var(--light);
-  padding: .75em;
-  border-radius: 15px;
 }
 
 /*  Apply a contrasting banner color, style the same with rounded edges */
@@ -157,37 +91,17 @@ img{
   background-color: var(--neutral); /* For browsers that do not support gradient*/
   background-image: linear-gradient(120deg, var(--dark), var(--neutral) );
   color: var(--attention-highlight);
-  padding: .5em;
   border-radius: 15px;
   border: ridge  var(--highlight) 5px;
 }
 
 /* Unique banner for navigation bar */
 .navbar{
-  padding: .5em;
   background-color: var(--dark); /* For browsers that do not support gradient*/
-  display:flex;
-  flex-direction: row;
-}
-
-.left-float{
-  border-right: double 20px var(--dark-highlight);
-  flex-direction: column;
-  justify-content: center;
-}
-
-.profile {
-  border-radius: 15px;
-  margin-right: 1em;
-  flex: 1 4 30%;
 }
 
 .profile-caption{
   color: var(--highlight);
-  padding: .8em;
-  font-size: 2em;
-  margin: -6em 0 7em 0;
-  flex: 1 4 30%;
 }
 
 /*Flip this on once scrolling occurs to keep nav bar at top*/
@@ -197,82 +111,15 @@ img{
   margin: 1.2em;
 }
 
-/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-.card-column {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  /* when the screen resizes, make it so our columns don't jump in size */
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
-}
-
-/* make each code card a flexbox column to align and justify content within it */
-.code-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100%;
-  padding: 2rem;
-  color: var(--dark-background);
-
-  /* outline is like border, but on the outside of the box instead of inside */
-  outline: 2px inset var(--highlight);
-  outline-offset: -2px;
-  transition: all 0.5s ease-in-out;
-}
-
-.left-float{
-  border-right: double 20px var(--highlight);
-  margin-right: 2em;
-}
-
 .header-name{
   color: var(--highlight);
   font-style: oblique;
 }
 
-.scale-down{
-  width: 40%;
-  margin:  -2em 0 .5em 10em;
-}
-
-.card-body{
-  font-size: 2.5em;
-}
-
-
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
 .code-card:hover,
 .code-card:hover .card-header {
   box-shadow: inset 0px 0px 8px var(--attention-highlight), 0 0 15px var(--attention-highlight);
-}
-
-/* each card's code block grows to the height of the largest code block on the page, making each card even in height */
-.code-card .code-block {
-  flex-grow: 1;
-}
-
-
-.code-card pre {
-  /* set styles to make it so code wraps in <pre> instead of overflowing */
-  white-space: pre-wrap;
-  overflow: auto;
-  tab-size: 4;
-  padding: 1.2rem 1rem;
-  color: var(--highlight);
-  border-radius: 8px;
-  /* use linear-gradient() function to create a fading background  */
-  background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0%,
-    rgba(232, 102, 236, 0.6) 100%
-  );
-  display: flex;
-  align-items: center;
-}
-
-/* on <pre> click, select all contents so the code is highlighted */
-.code-card pre:active {
-  user-select: all;
 }
 
 .contact{
@@ -283,17 +130,4 @@ img{
   margin: 2em;
   background-color: var(--neutral);
   padding: 3em;
-}
-
-/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-
-.justify-center {
-  justify-content: center;
 }
