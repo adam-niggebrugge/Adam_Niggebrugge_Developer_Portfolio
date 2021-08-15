@@ -252,10 +252,6 @@ img{
   flex-grow: 1;
 }
 
-/* each card's code block grows to the height of the largest code block on the page, making each card even in height */
-.code-card .code-block {
-  flex-grow: 1;
-}
 
 .code-card pre {
   /* set styles to make it so code wraps in <pre> instead of overflowing */
