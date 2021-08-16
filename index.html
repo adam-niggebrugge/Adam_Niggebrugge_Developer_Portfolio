@@ -36,266 +36,283 @@
 
 <body> 
 
-    <nav id="navbar" 
-    class="navbar"
-    >
-        <ul>
-            <li>
-                <a href="#home"
-                >Home
-                </a>
-            </li>
-            <li>
-                <a href="#personal"
-                >About
-                </a>
-            </li>
-            <li>
-                <a href="#HTML-semantic"
-                >Work Portfolio
-                </a>
-            </li>
-            <li>
-                <a href="#Contact"
-                >Contact
-                </a>
-            </li>
-        </ul>
+    <nav 
+        id="navbar" 
+        class="navbar"
+        role="navigation"
+    ><div
+        class="nav-wrapper
+                container"
+     >
+<!-- List to be shown on desktops -->
+     <ul
+        class="right
+            hide-on-med-and-down"
+        ><li>
+            <a href="#home"
+            >Home
+            </a>
+        </li>
+        <li>
+            <a href="#personal"
+            >About
+            </a>
+        </li>
+        <li>
+            <a href="#HTML-semantic"
+            >Work Portfolio
+            </a>
+        </li>
+        <li>
+            <a href="#Contact"
+            >Contact
+            </a>
+        </li>
+      </ul>
+<!-- lists to be shown when mobile viewing -->
+      <a 
+        href="#" 
+        data-target="nav-mobile" 
+        class="sidenav-trigger"
+        ><i 
+          class="material-icons"
+          >menu
+        </i>
+      </a>
+      <ul
+        id="nav-mobile"
+        class="sidenav
+                cust-sidenav"
+        ><li>
+            <a 
+                href="#home"
+            >Home
+            </a>
+         </li>
+         <li>
+            <a href="#personal"
+            >About
+            </a>
+         </li>
+         <li>
+            <a href="#HTML-semantic"
+            >Work Portfolio
+            </a>
+         </li>
+         <li>
+            <a href="#Contact"
+            >Contact
+            </a>
+         </li>
+      </ul>
+     
+     </div>
     </nav>
-    <header class="">
-        <div class="container">
-            <h1 
-                class="header
-                        center
-                        page-title"
-                >Welcome, I am  
-                    <span 
-                        class="header-name"
-                        >Adam Niggebrugge
-                    </span>
-            </h1>
-            <div class="row 
-                right-aligned"
-            ><h2 
-                class="banner-alt"
-                >A Full Stack Web Developer
-             </h2>    
-            </div>
-
-            <img 
-                id="home" 
-                class="transform" 
-                src="./assets/images/whiteMountainsPanShot.jpg"
-            />
+    <header 
+        id="index-banner"
+        class="parallax-container"
+    ><div 
+        class="section
+                no-pad-bot"
+    ><div
+        class="container
+                "
+     ><h1 
+          class="header
+                center
+                page-title"
+         >Welcome, I am  
+         <span 
+            class="header-name"
+         >Adam Niggebrugge
+         </span>
+         </h1>
+         <div 
+            class="row 
+            right-aligned"
+         ><h3 
+            class="header
+                    col
+                    s12
+                    light
+                    banner-alt"
+          >A Full Stack Web Developer
+          </h2>    
+         </div>
+     </div>
+     <div
+        class="parallax"    
+     ><img 
+        id="home" 
+        class="transform" 
+        src="./assets/images/ProfilePic.jpg"
+      />
+     </div>
     </header>
 
     
 <!-- Here is our page's main content, semantic html for accessibilty standards-->
     <main>
-        
-            <aside 
-                class=""
-            >
-                <figure>
-                    <img 
-                        class="profile" 
-                        alt="Black and White Profile Picture" 
-                        src="./assets/images/ProfilePic.jpg"
-                    />
-                    <figcaption 
-                        class="profile-caption"
-                        >I don't always look this sharp, but for special days I do.
-                    </figcaption>
-                </figure>
-                <section 
-                    id="personal"
-                >
-                    <h3 
-                        class="banner-alt"
-                    >Personal
-                    </h3>
-                    <div
-                        class=""
-                    >    
-                        <p
-                        >Thank you for taking the time to view my work. If you would like to know more about me please visit my bio page.
-                        </p>
-                        <a 
-                            href="https://adam-niggebrugge.github.io/prework-about-me/"
-                        >More about me
-                        </a>
-                    </div>
-                </section>
-                <section 
-                    id="Contact"
-                >
-                    <figure 
-                        class=""
-                    >
-                        <h3 
-                            class="banner"
-                        >Contact Me
-                        </h3>  
-                        <div 
-                            class="contact"
-                        >
-                            <ul>
-                                <li>
-                                    <a 
-                                        href="http://www.github.com/adam-niggebrugge"
-                                    >Github
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        href="mailto: adam.niggebrugge@gmail.com"
-                                    >Email Me
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        href="tel:18592216993"
-                                    >Call me
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>    
-                    </figure>
-                </section>
-            </aside>
-        
 <!-- Here an article since this content could be a blog or something-->
-            <article 
-                class=""
+        <article 
+        class="container"><!-- Here a section of the article focused on online perception -->
+            <section 
+                id="HTML-semantic" 
+                class="section"
             >
-<!-- Here a section of the article focused on online perception -->
-                <section 
-                    id="HTML-semantic" 
-                    class=""
+            <div
+            class="row"
+            ><figure 
+                class="col 
+                s12 
+                m4"
+            ><div 
+               class="card
+                darken-1"
+             ><div
+               class="card-content
+                icon-block"
+              ><h5 
+                class="card-title
+                    banner-alt"
+               >Trail Finder
+               </h5>
+                <a 
+                 href="https://adam-niggebrugge.github.io/01-Horiseon_Refactored/#online-reputation-management"
                 >
-                    <figure 
-                        class=""
-                    >
-                        <h2 
-                            class="banner-alt"
-                        >Semantic HTML
-                        </h2>
-                        <a 
-                            href="https://adam-niggebrugge.github.io/01-Horiseon_Refactored/#online-reputation-management"
-                        >
-                            <img 
-                                src="./assets/images/Upper-Horiseon-HTML-Static.jpg" 
-                                class="" 
-                                alt="Shows HTML accessible site"
-                            />
-                        </a>
-                        <div 
-                            class=""
-                        >
-                            <p
-                            >A display of semantical HTML for improved accessibilty
-                            </p>
-                        </div>    
-                    </figure>
-                </section>
-                <section 
-                    id="css-show" 
-                    class=""
+                <div
+                 class="card-image"
+                ><img 
+                    src="./assets/images/Upper-Horiseon-HTML-Static.jpg" 
+                    class="" 
+                    alt="Shows HTML accessible site"
+                 />
+                </div>
+                </a>
+            <p
+              class="light"
+            >A cross national collaboration to use some web service APIs. Developed a user story and used an agile methodology within Github.
+            </p>
+         </div>
+        </div>
+        </figure> 
+        <figure 
+            class="col 
+                s12 
+                m4"
+            ><div 
+                class="card
+                    darken-1"
+            ><div
+              class="card-content
+                    icon-block"
+             ><h5 
+                class="card-title
+                    banner"
+              >Weather Forcast
+              </h5>
+              <a 
+                href="https://adam-niggebrugge.github.io/01-Horiseon_Refactored/#online-reputation-management"
+              >
+              <div
+                class="card-image"
+              ><img 
+                    src="./assets/images/Upper-Horiseon-HTML-Static.jpg" 
+                    class="" 
+                    alt="Shows HTML accessible site"
                 >
-                    <figure 
-                        class=""
-                    >
-                        <h2 
-                            class="banner"
-                        >CSS
-                        </h2>
-                        <img 
-                            src="./assets/images/CSS-flex-box.jpg" 
-                            class="" 
-                            alt="CSS images" 
-                        />   
-                        <div 
-                            class=""
-                        >
-                            <p
-                            >This page is all about tricks with CSS. No javascript here, keep it light, keep it cool. Please note there is not a functioning website to view.
-                            </p>
-                            <a 
-                                href=""
-                            >Coming Soon
-                            </a>
-                        </div>    
-                    </figure>
-                </section>            
-                <section 
-                    id="Javascript" 
-                    class=""
-                >
-                    <figure 
-                        class=""
-                    >
-                        <h2 
-                            class="banner-alt"
-                        >Javascript
-                        </h2>
-                        <img 
-                            src="./assets/images/javascript-logo.png" 
-                            class="" 
-                            alt="Javascript Interactive site"
-                        />   
-                        <div 
-                            class=""
-                        >
-                            <p
-                            >What can one do with Javascript. Understanding scripting languages is key for any web developer. Please note there is not a functioning website to view.
-                            </p>
-                            <a 
-                                href=""
-                            >Coming Soon
-                            </a>
-                        </div>    
-                    </figure>
-                </section>
-                <section 
-                    id="SQL" 
-                    class=""
-                >
-                    <figure 
-                        class=""
-                    >
-                        <h2 
-                            class="banner"
-                        >SQL Backend
-                        </h2>
-                        <img 
-                            src="./assets/images/sql-crane.jpg" 
-                            class="" 
-                            alt="SQL backend" 
-                        />   
-                        <div 
-                            class=""
-                        >
-                            <p
-                            >Please note there is not a functioning website to view.
-                            </p>
-                        </div>    
-                    </figure>
-                </section>
-            </article>
+              </div>
+              </a>
+             <p
+              class="light"
+             >Check out uses of a Server Side API Call. Demonstration of taking open source data, using local storage for quicker user return service. Uses HTML, CSS, JS, MomentJS and Boostrap.
+             </p>
+            </div>
+            </div>   
+        </figure>
+        <figure 
+            class="col 
+                s12 
+                m4"
+            ><div 
+                class="card
+                    darken-1"
+            ><div
+              class="card-content
+                    icon-block"
+             ><h5 
+                class="card-title
+                    banner-alt"
+              >User Side Javascript
+              </h5>
+              <a 
+                href="https://adam-niggebrugge.github.io/01-Horiseon_Refactored/#online-reputation-management"
+              >
+              <div
+                 class="card-image"
+              ><img 
+                 src="./assets/images/Upper-Horiseon-HTML-Static.jpg" 
+                 class="" 
+                 alt="Shows HTML accessible site"
+               />
+              </a>
+              </div>
+               <p
+                class="light"
+               >A simple use of javascript for a user to enjoy a "quiz/game" or generte a random password.
+               </p>
+             </div>
+            </div>
+            </div>   
+        </figure>
+      </div>
+    </section>
+    </article>
+    <figure
+        class="parallax-container valign-wrapper"
+    ><div
+      class="section no-pad-bot"
+     ><div 
+        class="container"
+        ><div 
+            class="row center"
+         ><h5 
+            class="header
+                col 
+                s12 
+                light 
+                profile-caption"
+           >I don't always look this sharp, but for special days I do.
+           </h5>
+         </div>
+        </div>
+      </div>
+      <div
+        class="parallax"
+      ><img 
+            class="profile" 
+            alt="Black and White Profile Picture" 
+            src="./assets/images/ProfilePic.jpg"
+        />
+      </div>
+    </figure>
+
     
     </main>
 <!-- Here is our page's footer content, updated copyright to this year?, 
         semantic html for accessibilty standards, changed from div to footer v1.1.0-->
     <footer 
         class="banner"
-    >    
-        <h4
+    ><h4
         >Developed by I. A. Niggebrugge
-        </h4>
-        <p
-        >Copyright 2021
-        </p>
+     </h4>
+     <p
+     >Copyright 2021
+     </p>
     </footer>
+    <script 
+        src="https://code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
     <script 
         src="./assets/script/script.js"
     ></script>
