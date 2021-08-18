@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" 
+        content="width=device-width, 
+                initial-scale=1.0"
+    />
+<!--Import Google Icon Font-->
+    <link 
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    />
+    <link 
+        rel="stylesheet" 
+        href="./assets/css/materialize.min.css" 
+    />
+    <link 
+        rel="stylesheet" 
+        href="./assets/css/style.css" 
+    />
+    <link 
+        rel="icon" 
+        type="image/png" 
+        href="./assets/images/Mushroom.png"
+    />
+    <title
+        >Contact Me
+    </title>
+</head>
+
+<body>
+
+<main class="container">
+    <nav 
+    id="navbar" 
+    class="navbar"
+    role="navigation"
+    ><div
+      class="nav-wrapper
+            container"
+     >
+<!-- List to be shown on desktops -->
+    <ul
+        class="right
+            hide-on-med-and-down"
+        ><li>
+            <a         
+              onclick="switchPages(event)"
+              class="btn
+                     btn-cust"   
+              href="#home"
+            ><h6>Home
+            </h6>
+            </a>
+        </li>
+        <li>
+            <a
+            onclick="switchPages(event)"
+            class="btn
+                   btn-cust"
+            href="#portfolio"
+            ><h6>Portfolio
+            </h6>
+            </a>
+        </li>
+      </ul>
+    <!-- lists to be shown when mobile viewing -->
+      <a 
+        href="#" 
+        data-target="nav-mobile" 
+        class="sidenav-trigger"
+        ><i 
+          class="material-icons"
+          >menu
+        </i>
+      </a>
+      <ul
+        id="nav-mobile"
+        class="sidenav
+                cust-sidenav"
+        ><li>
+            <a 
+              onclick="switchPages(event)"
+              class="btn
+                     btn-cust"
+              href="#home"
+            >Home
+            </a>
+        </li>
+        <li>
+            <a
+            class="btn 
+                   btn-cust"
+            onclick="switchPages(event)"
+            href="#portfolio"
+            >Work Portfolio
+            </a>
+        </li>
+      </ul>
+    
+    </div>
+    </nav>
+  <header 
+      id="index-banner"
+      class="container"
+      ><div 
+        class="section
+              no-pad-bot"
+      ><div
+        class="container"
+        ><h2 
+          class="header
+              center
+              offset-s2
+              page-title"
+         >Welcome, to my  
+          <span 
+            class="header-name"
+          >Contact Form
+          </span>
+         </h2>
+       </div>
+      </div>
+  </header>
+
+
+<article class="row">
+    <form class="col s12">
+      <section class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </article>
+    </form>
+</main>
+
+<footer 
+    class="container
+        banner-alt"
+    ><h4>Developed by I. A. Niggebrugge
+     </h4>
+     <h6>Built from Materialize Parallax Template         
+     </h6>
+     <p>Copyright 2021
+    </p>
+</footer>
+
+
+<script 
+  src="https://code.jquery.com/jquery-2.1.1.min.js"
+  ></script>
+<script 
+  src="./assets/js/contact.js"
+  ></script>
+<script 
+  src="./assets/js/materialize.min.js"
+  ></script>
+  
+</body>

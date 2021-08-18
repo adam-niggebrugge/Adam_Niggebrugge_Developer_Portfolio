@@ -45,26 +45,40 @@
         class="right
             hide-on-med-and-down"
         ><li>
-            <a href="#home"
+            <a 
+              class="btn
+                    btn-cust"  
+              href="#home"
             ><h6>Home
              </h6>
             </a>
         </li>
         <li>
-            <a href="#personal"
-            ><h6>About
+            <a 
+             class="btn
+                    btn-cust"  
+                    modal-trigger"
+              href="#personal"
+            ><h6>About Me
              </h6>
             </a>
         </li>
         <li>
-            <a href="#portfolio"
+            <a
+             class="btn 
+                    btn-cust"  
+             href="#portfolio"
             ><h6>Portfolio
              </h6>
             </a>
         </li>
         <li>
-            <a href="#Contact"
-            ><h6>Contact
+            <a
+             class="btn
+                    btn-cust"  
+             href="#Contact"
+             onclick="switchPages(event)"
+            ><h6>Contact Me
              </h6>
             </a>
         </li>
@@ -85,23 +99,36 @@
                 cust-sidenav"
         ><li>
             <a 
-                href="#home"
+              class="btn
+                     btn-cust"  
+              href="#home"
             >Home
             </a>
          </li>
          <li>
-            <a href="#personal"
+            <a 
+             class="btn
+                    btn-cust
+                    modal-trigger"
+             href="#personal"
             >About
             </a>
          </li>
          <li>
-            <a href="#portfolio"
+            <a
+             class="btn
+                    btn-cust"
+             href="#portfolio"
             >Work Portfolio
             </a>
          </li>
          <li>
-            <a href="#Contact"
-            >Contact
+            <a
+              class="btn
+                     btn-cust"
+             onclick="switchPages(event)"
+             href="#Contact"
+            >Contact Me
             </a>
          </li>
       </ul>
@@ -114,10 +141,10 @@
     ><div 
         class="section
                 no-pad-bot"
-    ><div
+     ><div
         class="container
                 "
-     ><h2 
+      ><h2 
           class="header
                 center
                 offset-s2
@@ -127,11 +154,11 @@
             class="header-name"
          >Adam Niggebrugge
          </span>
-         </h2>
-         <div 
+        </h2>
+        <div 
             class="row 
             right-aligned"
-         ><h5 
+        ><h5 
             class="col
                 offset-s6
                 s6
@@ -147,6 +174,7 @@
         class="transform" 
         src="./assets/images/ProfilePic.jpg"
       />
+     </div>
      </div>
     </header>
 
@@ -198,8 +226,9 @@
                   </i>
                 </span>
                 <p><a 
-                   href="https://github.com/jyothybaby/Trail-Finder"
-                   >View Project GitHub
+                    target="_blank"
+                    href="https://github.com/jyothybaby/Trail-Finder"
+                   >View Project on GitHub
                    </a>
                 </p>
                 </div>
@@ -221,11 +250,13 @@
                <p
                 class="light
                         flow-text"
-                >As a team we collaborated on ideas for an app. Researched available web service APIs to support the app. We used an agile methodology and Github Projects Board to simulate backlog tasks. This app used materialize
+                >As a team we collaborated on ideas for an app. We also researched available web service APIs to support the app. We used an agile methodology and Github Projects Board to organize ourselves. We opted for slack to serve for daily stand up meetings.
                 </p>
                 <div
                     class="offset-s6"
                   > <a
+                     target="_blank"
+                     rel="noreferrer noopener"
                      href="https://jyothybaby.github.io/Trail-Finder/"
                     >Trail-Finder Site
                     </a>
@@ -266,8 +297,10 @@
                   </i>
                  </span>
                   <p><a 
+                        target="_blank"
+                        rel="noreferrer noopener"
                         href="https://adam-niggebrugge.github.io/Weather_City_App/"
-                     >Get Some Forecasts!
+                     >Project Git Hub
                      </a>
                   </p>
                 </div>
@@ -286,13 +319,18 @@
                      >close
                      </i>
                    </span>
-                   <p>Check out uses of a Server Side API Call. Demonstration of taking open source data, using local storage for quicker user return service. Uses HTML, CSS, JS, MomentJS and Boostrap.
+                   <p
+                    class="light
+                           flow-text"
+                    >This app demonstrates use of a Server Side API Call. Uses HTML, CSS, JS, MomentJS and Boostrap. I was required to create an app that could provide weather results for any area searched by a user. 
                    </p>
                    <div
                         class="offset-s6"
                     > <a
+                        target="_blank"
+                        rel="noreferrer noopener"
                         href="https://adam-niggebrugge.github.io/Code_Quiz_WEB_APIs/"
-                      >Quiz Time!
+                      >Get Some Forecasts!
                       </a>
                     </div>
                 </div>
@@ -331,7 +369,9 @@
                   </i>
                  </span>
                   <p><a 
-                        href="https://adam-niggebrugge.github.io/Code_Quiz_WEB_APIs/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="https://github.com/adam-niggebrugge/Code_Quiz_WEB_APIs"
                      >Quiz Time!
                      </a>
                   </p>
@@ -351,10 +391,15 @@
                       >close
                      </i>
                    </span>
-                   <p>A simple use of javascript for a user to enjoy a "quiz/game". Involves using local storage within Javascript, HTML, CSS with a little help from Bootstrap to implement a modal that records the user's name.
+                   <p
+                    class="light
+                        flow-text"
+                    >A simple use of javascript for a user to enjoy a "quiz/game". Involves using local storage within Javascript, HTML, CSS with a little help from Bootstrap to implement a modal that records the user's name.
                     <div
                         class="offset-s6"
                     > <a
+                        target="_blank"
+                        rel="noreferrer noopener"
                         href="https://adam-niggebrugge.github.io/Code_Quiz_WEB_APIs/"
                       >Quiz Time!
                       </a>
@@ -394,7 +439,62 @@
         />
       </div>
     </figure>
-
+ <!-- Modal Structure -->
+ <div 
+    id="personal" 
+    class="modal 
+        bottom-sheet"
+ >
+  <div 
+   class="modal-content"
+  ><h4>
+    About Me
+   </h4>
+      <p
+       class="light
+      flow-text"
+       >Thank you for checking out my portfolio page! I am still new to the developer scene, getting my feet wet. I have taken structured classes at the high school level (1998, 99) and college 200 level (2006) using C++ and Visual Studio. Those classes focused on common logic sets to iterate to a solution and little beyond console applications. Now 20 years later I am scratching the itch to learn more and become an active full stack developer! I am currently enrolled in a coding bootcamp. If you would like to learn more about me, on a 
+        <a 
+          href="https://adam-niggebrugge.github.io/prework-about-me/" 
+          target="blank"
+          rel="noreferrer noopener"
+          >personal level
+        </a> 
+        , please click away.
+      </p>
+        <ul>
+          <li> 
+            <a           
+              target="blank"
+              rel="noreferrer noopener"
+              href="https://github.com/adam-niggebrugge"
+            ><img 
+                src="assets/images/github.png" 
+              />
+            </a>
+            <p
+              class="light
+                    flow-text"
+             >Check out my Github
+            </p> 
+          </li>
+          <li>
+            <!--other links or images can be added as list elements-->
+          </li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+      <a 
+        href="#!" 
+        class="modal-close
+            btn 
+            btn-cust
+            waves-effect 
+            waves-green "
+        >Close
+      </a>
+    </div>
+  </div>
     
     </main>
 <!-- Here is our page's footer content, updated copyright to this year?, 
@@ -412,10 +512,10 @@
         src="https://code.jquery.com/jquery-2.1.1.min.js"
     ></script>
     <script 
-        src="./assets/script/script.js"
+        src="./assets/js/script.js"
     ></script>
     <script 
-        src="./assets/script/materialize.min.js"
+        src="./assets/js/materialize.min.js"
     ></script>
 </body>
 

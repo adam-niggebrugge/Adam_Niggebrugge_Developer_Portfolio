@@ -149,6 +149,12 @@ footer > *{
    padding-top: .25em;
  }
 
+.btn-cust{
+  background-color: var(--highlight);
+  text-align: center;
+}  
+
+
  @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
