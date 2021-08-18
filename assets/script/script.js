@@ -1,3 +1,5 @@
+const contactPage = 'contact.html';
+
 //This creates a listner event that will call
 // window.onscroll = function() {stickyElement()};
 
@@ -41,3 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.modal');
   var instances = M.Modal.init(elems);
 });
+
+
+function switchPages(){
+  document.location.replace(contactPage);
+}
