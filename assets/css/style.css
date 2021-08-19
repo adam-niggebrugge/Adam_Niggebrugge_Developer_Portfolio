@@ -93,8 +93,6 @@ footer > *{
   padding: 3em;
 }
 
-
-
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -165,6 +163,7 @@ footer > *{
   background-color: var(--bold-contrast);
 }
 
+
  @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -173,9 +172,27 @@ footer > *{
   #index-banner .section {
     top: 10%;
   }
+  .page-title{
+    font-size: 2.75em;
+  }
+
   .cust-row{
    display: block; 
- }
+  }
+
+  .banner-alt{
+    font-size: 2.33em;
+  }
+
+ .banner{
+    font-size: 1.8em;
+    padding: .33em;
+  }
+
+  .card .card-title,
+  .card-title {
+    font-size: 1.8em;
+  } 
 }
 
 @media only screen and (max-width : 600px) {
@@ -184,5 +201,23 @@ footer > *{
   }
   .cust-row{
     display: block;
- }
+  }
+
+  .page-title{
+    font-size: 2em;
+  }
+
+  .banner-alt{
+    font-size: 1.33em;
+  }
+
+  .banner{
+    font-size: 1.2em;
+    padding: .25em;
+  }
+ 
+  .card .card-title,
+  .card-title {
+    font-size: 1.2em;
+  } 
 }

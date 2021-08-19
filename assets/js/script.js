@@ -50,10 +50,8 @@ function switchPages(){
 }
 //Materialize instance of tabs iniitializer
 document.addEventListener('DOMContentLoaded', function() {
-  debugger
   let el = document.querySelectorAll('.tabs');
   const tabsInstance = M.Tabs.init(el, {swipeable: true});
-  
 } )
   
 //Materialize instance to activate the carousel functionality
