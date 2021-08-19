@@ -151,9 +151,19 @@ footer > *{
 
 .btn-cust{
   background-color: var(--highlight);
-  text-align: center;
 }  
 
+.link-cust{
+  color: var(--mildlight);
+}
+
+.swipe-cust{
+  background-color: var(--bold);
+}
+
+.swipe-cust-alt{
+  background-color: var(--bold-contrast);
+}
 
  @media only screen and (max-width : 992px) {
   .parallax-container .section {

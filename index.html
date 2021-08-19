@@ -191,7 +191,9 @@
             <div
             class="row
                     cust-row"
-            ><figure 
+            >
+            <!-- Each figure should be a template for small self contained objects  -->
+            <figure 
             class="col 
                 s12 
                 m6
@@ -336,7 +338,67 @@
                 </div>
               </div>
         </figure>
-        <figure 
+        
+      </div>
+    </section>
+    </article>
+<!-- Should be a swipable tabs -->
+    <ul 
+      id="tabs-swipe-header" 
+      class="tabs"
+      >
+       <li 
+         class="tab 
+              col 
+              s3"
+       >
+        <a 
+          href="#test-swipe-1"
+          >Test 1
+        </a>
+       </li>
+       <li 
+         class="tab 
+               col 
+                s3"
+          >
+           <a 
+            href="#test-swipe-2"
+            >Test 2
+           </a>
+        </li>
+        <li 
+           class="tab 
+                  col 
+                  s3"
+          >
+           <a 
+             href="#test-swipe-3"
+             >Test 3
+            </a>
+        </li>
+    </ul>
+    <div  
+      class="tabs-content carousel carousel-slider"
+    >
+     <div 
+      id="test-swipe-1" 
+      class="col 
+            s12
+            swipe-cust-alt"
+      >Test 1
+       <a 
+          class="link-cust"
+          target="_blank" 
+          href="https://github.com/Dogfalo/materialize"
+       >External link in new window
+       </a>
+      </div>
+     <div 
+      id="test-swipe-2" 
+      class="col s12 swipe-cust"
+      >Test 2
+      <figure 
             class="col 
                 s12 
                 m6
@@ -409,67 +471,13 @@
               </div>
         </figure>
       </div>
-    </section>
-    </article>
-
-    <ul 
-      id="tabs-swipe-demo" 
-      class="tabs"
-      >
-       <li 
-         class="tab 
-              col 
-              s3"
-       >
-        <a 
-          href="#test-swipe-1"
-          >Test 1
-        </a>
-       </li>
-       <li 
-         class="tab 
-               col 
-                s3"
-          >
-           <a 
-            href="#test-swipe-1"
-            >Test 2
-           </a>
-        </li>
-        <li 
-           class="tab 
-                  col 
-                  s3"
-          >
-           <a 
-             href="#test-swipe-3"
-             >Test 3
-            </a>
-        </li>
-    </ul>
-    <div 
-      id="test-swipe-1" 
-      class="col 
-            s12
-            blue"
-      >Test 1
-       <a 
-          target="_blank" 
-           href="https://github.com/Dogfalo/materialize"
-       >External link in new window
-       </a>
-    </div>
-    <div 
-      id="test-swipe-2" 
-      class="col s12 red"
-      >Test 2
-      </div>
-    <div 
-      id="test-swipe-3" 
-      class="col s12 green"
+     <div 
+       id="test-swipe-3" 
+      class="col s12 swipe-cust-alt"
       >Test 3
+      </div>
     </div>
-    
+
     <figure
         class="parallax-container 
                valign-wrapper"

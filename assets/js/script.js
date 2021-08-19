@@ -40,11 +40,24 @@ const contactPage = 'contact.html';
 * @prop {String} [endingTop='10%'] - endingTop
 */
 document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.modal');
-  var instances = M.Modal.init(elems);
+  let elems = document.querySelectorAll('.modal');
+  const modalInstances = M.Modal.init(elems);
 });
 
 
 function switchPages(){
   document.location.replace(contactPage);
 }
+//Materialize instance of tabs iniitializer
+document.addEventListener('DOMContentLoaded', function() {
+  debugger
+  let el = document.querySelectorAll('.tabs');
+  const tabsInstance = M.Tabs.init(el, {swipeable: true});
+  
+} )
+  
+//Materialize instance to activate the carousel functionality
+document.addEventListener('DOMContentLoaded', function() {
+  let elems = document.querySelectorAll('.carousel');
+  const caruselInstances = M.Carousel.init(elems, {numVisible: 0, dist: 0, fullWidth: true});
+})
