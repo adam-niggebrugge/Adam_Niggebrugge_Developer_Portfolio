@@ -54,6 +54,7 @@ footer > *{
   color: var(--attention-highlight);
   border-radius: 15px;
   text-align: end;
+  padding: .75em;
 }
 
 /* Unique banner for navigation bar */
@@ -163,7 +164,9 @@ footer > *{
   background-color: var(--bold-contrast);
 }
 
-
+.carousel-cust{
+  height: 850px;
+}
  @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -182,6 +185,7 @@ footer > *{
 
   .banner-alt{
     font-size: 2.33em;
+    padding: .5em;
   }
 
  .banner{
@@ -189,10 +193,15 @@ footer > *{
     padding: .33em;
   }
 
-  .card .card-title,
-  .card-title {
+.card .card-title,
+.card-title {
     font-size: 1.8em;
-  } 
+} 
+
+.carousel-cust{
+  height: 650px;
+}
+
 }
 
 @media only screen and (max-width : 600px) {
@@ -220,4 +229,8 @@ footer > *{
   .card-title {
     font-size: 1.2em;
   } 
+
+  .carousel-cust{
+    height: 375px;
+  }
 }
