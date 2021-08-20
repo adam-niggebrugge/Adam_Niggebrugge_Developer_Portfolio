@@ -183,7 +183,12 @@
     <main>
 <!-- Here an article since this content could be a blog or something-->
         <article 
-            class="container"><!-- Here a section of the article focused on online perception -->
+            class="container"
+         ><!-- Here a section of the article focused on online perception -->
+          <h3
+            class="banner""
+           >Portfolio Work :
+          </h3>
             <section 
                 id="portfolio" 
                 class="section"
@@ -191,11 +196,13 @@
             <div
             class="row
                     cust-row"
-            ><figure 
+            >
+            <!-- Each figure should be a template for small self contained objects  -->
+            <figure 
             class="col 
                 s12 
-                m6
-                l4"
+                m12
+                l12"
             > <div 
                 class="card
                     hoverable"
@@ -218,7 +225,7 @@
                             grey-text 
                             text-darken-4
                             banner"
-                 >Team Project Work
+                 >A Collaborative Project
                   <i 
                     class="material-icons 
                             right"
@@ -228,7 +235,9 @@
                 <p><a 
                     target="_blank"
                     href="https://github.com/jyothybaby/Trail-Finder"
-                   >View Project on GitHub
+                   ><img 
+                   src="assets/images/github.png" 
+                   />
                    </a>
                 </p>
                 </div>
@@ -250,7 +259,7 @@
                <p
                 class="light
                         flow-text"
-                >As a team we collaborated on ideas for an app. We also researched available web service APIs to support the app. We used an agile methodology and Github Projects Board to organize ourselves. We opted for slack to serve for daily stand up meetings.
+                >As a team we collaborated on ideas for an app. We then researched available web service APIs to support the app idea. We used an agile methodology and Github Projects Board to organize ourselves. We opted for slack to serve as our daily stand up meetings. We completed this project within the week time frame we were given.
                 </p>
                 <div
                     class="offset-s6"
@@ -264,162 +273,424 @@
                </div>
             </div>
         </figure> 
-        <figure 
-            class="col 
-                s12 
-                m6
-                l4"
-            > <div 
-                class="card
-                    hoverable"
-              > <div 
-                class="card-image 
-                    waves-effect 
-                    waves-block 
-                    waves-light"
-                ><img 
-                    class="activator" 
-                    src="./assets/images/CitySearched.jpg">
-                </div>
-                <div 
-                    class="card-content"
-                ><span 
-                    class="card-title 
-                            activator 
-                            grey-text 
-                            text-darken-4
-                            banner"
-                 >Server Side API
-                  <i 
-                    class="material-icons 
-                    right"
-                  >more_vert
-                  </i>
-                 </span>
-                  <p><a 
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href="https://adam-niggebrugge.github.io/Weather_City_App/"
-                     >Project Git Hub
-                     </a>
-                  </p>
-                </div>
-                <div 
-                 class="card-reveal"
-                 > <span 
-                    class="card-title 
-                        grey-text 
-                        text-darken-4
-                        banner-alt"
-                    >Weather Forecast
-                     <i 
-                       class="material-icons 
-                            right
-                            cust-icon"
-                     >close
-                     </i>
-                   </span>
-                   <p
-                    class="light
-                           flow-text"
-                    >This app demonstrates use of a Server Side API Call. Uses HTML, CSS, JS, MomentJS and Boostrap. I was required to create an app that could provide weather results for any area searched by a user. 
-                   </p>
-                   <div
-                        class="offset-s6"
-                    > <a
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href="https://adam-niggebrugge.github.io/Code_Quiz_WEB_APIs/"
-                      >Get Some Forecasts!
-                      </a>
-                    </div>
-                </div>
-              </div>
-        </figure>
-        <figure 
-            class="col 
-                s12 
-                m6
-                l4"
-            > <div 
-                class="card
-                    hoverable"
-              > <div 
-                class="card-image 
-                    waves-effect 
-                    waves-block 
-                    waves-light"
-                ><img 
-                    class="activator" 
-                    src="./assets/images/CodeQuizRefined.gif">
-                </div>
-                <div 
-                    class="card-content"
-                ><span 
-                    class="card-title 
-                            activator 
-                            grey-text 
-                            text-darken-4
-                            banner"
-                 >User Side Javascript
-                  <i 
-                    class="material-icons 
-                    right"
-                  >more_vert
-                  </i>
-                 </span>
-                  <p><a 
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href="https://github.com/adam-niggebrugge/Code_Quiz_WEB_APIs"
-                     >Quiz Time!
-                     </a>
-                  </p>
-                </div>
-                <div 
-                 class="card-reveal"
-                 > <span 
-                    class="card-title 
-                        grey-text 
-                        text-darken-4
-                        banner-alt"
-                    >User Side Javascript
-                     <i 
-                       class="material-icons 
-                            right
-                            cust-icon"
-                      >close
-                     </i>
-                   </span>
-                   <p
-                    class="light
-                        flow-text"
-                    >A simple use of javascript for a user to enjoy a "quiz/game". Involves using local storage within Javascript, HTML, CSS with a little help from Bootstrap to implement a modal that records the user's name.
-                    <div
-                        class="offset-s6"
-                    > <a
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href="https://adam-niggebrugge.github.io/Code_Quiz_WEB_APIs/"
-                      >Quiz Time!
-                      </a>
-                    </div>
-                   </p>
-                </div>
-              </div>
-        </figure>
+        
       </div>
     </section>
     </article>
+<!-- Should be a swipable tabs -->
+  <section
+    class="container"
+    >
+    <div
+      class="row"
+     >
+      <h4
+        class="banner-alt"
+      >Individual Coding Endeavours
+      </h4>
+    <ul 
+      id="tabs-swipe-header" 
+      class="tabs"
+      >
+       <li 
+         class="tab 
+              col 
+              s3"
+       >
+        <a 
+          href="#swipe-Server-Side-API"
+          >Server Side API
+        </a>
+       </li>
+       <li 
+         class="tab 
+               col 
+                s3"
+          >
+           <a 
+            href="#swipe-Quiz-Code"
+            >Javascript DOM
+           </a>
+        </li>
+        <li 
+           class="tab 
+                  col 
+                  s3"
+          >
+           <a 
+             href="#swipe-Generate-Password"
+             >Javascript Logic
+            </a>
+        </li>
+        <li 
+           class="tab 
+                  col 
+                  s3"
+          >
+           <a 
+             href="#swipe-semantic"
+             >Semantic HTML
+            </a>
+        </li>
+    </ul>
+
+    <div  
+      class="tabs-content 
+            carousel 
+            carousel-slider 
+            carousel-cust"
+    >
+     <div 
+      id="swipe-Server-Side-API" 
+      class="swipe-cust"
+      > 
+       <figure
+          class="section"
+        > 
+         <div 
+          class="card
+              hoverable"
+         > <div 
+          class="card-image 
+              waves-effect 
+              waves-block 
+              waves-light"
+          ><img 
+              class="activator" 
+              src="./assets/images/CitySearched.jpg">
+          </div>
+          <div 
+              class="card-content"
+          ><span 
+              class="card-title 
+                      activator 
+                      grey-text 
+                      text-darken-4
+                      banner"
+           >Server Side API
+            <i 
+              class="material-icons 
+              right"
+            >more_vert
+            </i>
+           </span>
+            <p><a 
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://adam-niggebrugge.github.io/Weather_City_App/"
+               ><img 
+                  src="assets/images/github.png" 
+                />
+               </a>
+            </p>
+          </div>
+          <div 
+           class="card-reveal"
+           > <span 
+              class="card-title 
+                  grey-text 
+                  text-darken-4
+                  banner-alt"
+              >Weather Forecast
+               <i 
+                 class="material-icons 
+                      right
+                      cust-icon"
+               >close
+               </i>
+             </span>
+             <p
+              class="light
+                     flow-text"
+              >This app demonstrates use of a Server Side API Call. Uses HTML, CSS, JS, MomentJS and Boostrap. I was required to create an app that could provide weather results for any area searched by a user. 
+             </p>
+             <div
+                  class="offset-s6"
+              > 
+               <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://adam-niggebrugge.github.io/Weather_City_App/"
+                >Get Some Forecasts!
+                </a>
+              </div>
+            </div>
+          </div>
+        </figure>
+     </div>
+
+     <div 
+      id="swipe-Quiz-Code" 
+      class="swipe-cust-alt"
+      >
+       <figure
+         class="section"
+        > 
+          <div 
+            class="card
+                hoverable"
+          > 
+            <div 
+            class="card-image 
+                waves-effect 
+                waves-block 
+                waves-light"
+            >
+              <img 
+                class="activator" 
+                src="./assets/images/CodeQuizRefined.gif"
+              />
+            </div>
+            <div 
+                class="card-content"
+            >
+              <span 
+                class="card-title 
+                        activator 
+                        grey-text 
+                        text-darken-4
+                        banner"
+              >User Side Javascript
+              <i 
+                class="material-icons 
+                right"
+              >more_vert
+              </i>
+              </span>
+              <p><a 
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://github.com/adam-niggebrugge/Code_Quiz_WEB_APIs"
+                  ><img 
+                     src="assets/images/github.png" 
+                   />
+                  </a>
+              </p>
+            </div>
+            <div 
+              class="card-reveal"
+              > 
+                <span 
+                class="card-title 
+                    grey-text 
+                    text-darken-4
+                    banner-alt"
+                >User Side Javascript
+                  <i 
+                    class="material-icons 
+                        right
+                        cust-icon"
+                  >close
+                  </i>
+                </span>
+                <p
+                class="light
+                    flow-text"
+                >A simple use of javascript for a user to enjoy a "quiz/game". Involves using local storage within Javascript, HTML, CSS with a little help from Bootstrap to implement a modal that records the user's name.
+                <div
+                    class="offset-s6"
+                > 
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://adam-niggebrugge.github.io/Code_Quiz_WEB_APIs/"
+                  >Quiz Time!
+                  </a>
+                </div>
+                </p>
+            </div>
+          </div>
+        </figure>
+      </div>
+     
+      <div 
+        id="swipe-Generate-Password" 
+        class="swipe-cust"
+      >      
+      <figure
+        class="section"
+      > 
+       <div 
+        class="card
+          hoverable"
+       > 
+        <div 
+         class="card-image 
+          waves-effect 
+          waves-block 
+          waves-light"
+        >
+         <img 
+          class="activator" 
+          src="./assets/images/Password_Image.jpg"
+          />
+        </div>
+        <div 
+          class="card-content"
+        >
+         <span 
+          class="card-title 
+                  activator 
+                  grey-text 
+                  text-darken-4
+                  banner"
+         >
+         <i 
+          class="material-icons 
+          right"
+         >more_vert
+         </i>
+         </span>
+        <p>
+           <a 
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/adam-niggebrugge/03-Javascript-Password-Generator"
+           ><img 
+              src="assets/images/github.png" 
+            />
+           </a>
+        </p>
+      </div>
+        <div 
+        class="card-reveal"
+        > 
+          <span 
+            class="card-title 
+                grey-text 
+                text-darken-4
+                banner-alt"
+            >Need a Password
+            <i 
+              class="material-icons 
+                    right
+                    cust-icon"
+              >close
+            </i>
+          </span>
+          <p
+            class="light
+                flow-text"
+            >This exercise was a demonstration of handling user inputs to return a "password" that meets those requests. This relied on basic Javascript without being connected to any HTML. When writing this code it was to understand uses of arrays and functions.
+            <div
+                class="offset-s6"
+            > 
+              <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://adam-niggebrugge.github.io/03-Javascript-Password-Generator/"
+                >It's a secret to Everbody!
+              </a>
+            </div>
+          </p>
+        </div>
+        </div>
+      </figure>
+    </div>
+      <div 
+        id="swipe-semantic" 
+        class="swipe-cust"
+      >      
+       <figure
+        class="section"
+        > 
+         <div 
+          class="card
+            hoverable"
+         > 
+          <div 
+           class="card-image 
+            waves-effect 
+            waves-block 
+            waves-light
+            medium"
+          >
+           <img 
+            class="activator" 
+            src="./assets/images/HTML_Semantic.jpg"
+            />
+          </div>
+          <div 
+            class="card-content"
+          >
+           <span 
+            class="card-title 
+                    activator 
+                    grey-text 
+                    text-darken-4
+                    banner"
+           >
+           <i 
+            class="material-icons 
+            right"
+           >more_vert
+           </i>
+           </span>
+          <p>
+             <a 
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://github.com/adam-niggebrugge/03-Javascript-Password-Generator"
+             ><img 
+                src="assets/images/github.png" 
+              />
+             </a>
+          </p>
+        </div>
+          <div 
+          class="card-reveal"
+          > 
+            <span 
+              class="card-title 
+                  grey-text 
+                  text-darken-4
+                  banner-alt"
+              >Easier to Read HTML
+              <i 
+                class="material-icons 
+                      right
+                      cust-icon"
+                >close
+              </i>
+            </span>
+            <p
+              class="light
+                  flow-text"
+              >This exercise to refactor the existing web page so that it would meet semantic HTML. Doing this makes the webpage have a higher SEO rating in web search tools. Better SEO ratings means being ranked higher in the returned results. Also semantic HTML is easier to read. This applies to both humans and machines. Thus web pages using good semantic HTML will be easier for screen readers to read.
+              <div
+                  class="offset-s6"
+              > 
+                <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://github.com/adam-niggebrugge/01-Horiseon_Refactored/blob/main/index.html"
+                  >View HTML
+                </a>
+              </div>
+            </p>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+      
+  </div>
+  </section>
+
     <figure
-        class="parallax-container valign-wrapper"
-    ><div
+        class="parallax-container 
+               valign-wrapper"
+    >
+     <div
       class="section no-pad-bot"
-     ><div 
+     >
+      <div 
         class="container"
-        ><div 
+        >
+         <div 
             class="row center"
-         ><h5 
+         >
+          <h5 
             class="header
                 col 
                 s12 
@@ -447,7 +718,8 @@
  >
   <div 
    class="modal-content"
-  ><h4>
+  >
+   <h4>
     About Me
    </h4>
       <p
@@ -505,7 +777,9 @@
      </h4>
      <h6>Built from Materialize Parallax Template         
      </h6>
-     <p>Copyright 2021
+     <p
+      class="flow-text"
+      >Copyright 2021
      </p>
     </footer>
     <script 
