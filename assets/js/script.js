@@ -51,11 +51,11 @@ function switchPages(){
 //Materialize instance of tabs iniitializer
 document.addEventListener('DOMContentLoaded', function() {
   let el = document.querySelectorAll('.tabs');
-  const tabsInstance = M.Tabs.init(el, {swipeable: true});
+  const tabsInstance = M.Tabs.init(el);
 } )
   
 //Materialize instance to activate the carousel functionality
 document.addEventListener('DOMContentLoaded', function() {
   let elems = document.querySelectorAll('.carousel');
-  const caruselInstances = M.Carousel.init(elems, {numVisible: 0, dist: 0, fullWidth: true});
+  const carouselInstances = M.Carousel.init(elems, {numVisible: 0, noWrap: true, indicators: true});
 })
