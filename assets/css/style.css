@@ -71,6 +71,8 @@ footer > *{
   position: fixed;
   top: 0;
   margin: 1.2em;
+  z-index: 6;
+  box-shadow: inset 0px 3px 8px var(--bold-contrast-tranparancy), 0 0 15px var(--bold-contrast);
 }
 
 .header-name{
@@ -114,13 +116,15 @@ footer > *{
    height: auto;
    color: var(--light);
  }
-   .parallax-container .section {
+   
+.parallax-container .section {
      width: 100%;
-   }
+}
  
  .icon-block {
    padding: 0 15px;
  }
+
  .icon-block .material-icons {
    font-size: inherit;
  }
@@ -165,16 +169,35 @@ footer > *{
 }
 
 .carousel-cust{
-  height: 850px;
+  height: 100%;
 }
+
+.live-website{
+  padding-top: .75em;
+  max-width: 4em;
+  animation: blink 2s ease-in-out infinite;
+}
+
+.live-website-text{
+  vertical-align: baseline; 
+}
+
+@keyframes blink {
+  from, to {opacity: 1}
+  66% {opacity: 0.66}
+  33% {opacity: 0.33} 
+}
+
  @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
+
   .page-title{
     font-size: 2.75em;
   }
@@ -193,13 +216,24 @@ footer > *{
     padding: .33em;
   }
 
-.card .card-title,
-.card-title {
+ .card .card-title,
+ .card-title {
     font-size: 1.8em;
-} 
+ } 
 
-.carousel-cust{
-  height: 650px;
+ .carousel-cust{
+  height: 85%;
+ }
+
+ .live-website{
+  padding-top: 1.1em;
+  max-width: 3em;
+ }
+
+ .sticky {
+  max-width: 10%;
+  border-radius: 25px;
+  z-index: 4;
 }
 
 }
@@ -231,6 +265,17 @@ footer > *{
   } 
 
   .carousel-cust{
-    height: 375px;
+    height: 66%;
+  }
+
+  .live-website{
+    padding-top: 1.5em;
+    max-width: 2em;
+  }
+
+  .sticky {
+    max-width: 25%;
+    border-radius: 25px;
+    z-index: 4;
   }
 }

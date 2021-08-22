@@ -31,7 +31,10 @@
 </head>
 
 <body> 
-
+  <div
+    id="home" 
+    class="banner-alt"  
+  >
     <nav 
         id="navbar" 
         class="navbar"
@@ -85,7 +88,7 @@
       </ul>
 <!-- lists to be shown when mobile viewing -->
       <a 
-        href="#" 
+        href="#home" 
         data-target="nav-mobile" 
         class="sidenav-trigger"
         ><i 
@@ -100,7 +103,8 @@
         ><li>
             <a 
               class="btn
-                     btn-cust"  
+                     btn-cust
+                     sidenav-close"  
               href="#home"
             >Home
             </a>
@@ -109,6 +113,7 @@
             <a 
              class="btn
                     btn-cust
+                    sidenav-close
                     modal-trigger"
              href="#personal"
             >About
@@ -117,7 +122,8 @@
          <li>
             <a
              class="btn
-                    btn-cust"
+                    btn-cust
+                    sidenav-close"
              href="#portfolio"
             >Work Portfolio
             </a>
@@ -125,16 +131,17 @@
          <li>
             <a
               class="btn
-                     btn-cust"
+                     btn-cust
+                     sidenav-close"
              onclick="switchPages(event)"
              href="#Contact"
             >Contact Me
             </a>
          </li>
       </ul>
-     
      </div>
     </nav>
+  </div>
     <header 
         id="index-banner"
         class="parallax-container"
@@ -170,7 +177,6 @@
      <div
         class="parallax"    
      ><img 
-        id="home" 
         class="transform" 
         src="./assets/images/ProfilePic.jpg"
       />
@@ -186,32 +192,36 @@
             class="container"
          ><!-- Here a section of the article focused on online perception -->
           <h3
-            class="banner""
+            id="portfolio"
+            class="banner"
            >Portfolio Work :
           </h3>
             <section 
-                id="portfolio" 
                 class="section"
             >
-            <div
-            class="row
+             <div
+              class="row
                     cust-row"
-            >
-            <!-- Each figure should be a template for small self contained objects  -->
-            <figure 
-            class="col 
+             >
+    <!-- Each figure should be a template for small self contained objects  -->
+              <figure 
+               class="col 
                 s12 
                 m12
                 l12"
-            > <div 
+              > 
+               <div 
                 class="card
+                    medium
                     hoverable"
-              > <div 
-                class="card-image 
+               > 
+                <div 
+                  class="card-image 
                     waves-effect 
                     waves-block 
                     waves-light"
-                ><img 
+                >
+                 <img 
                     class="activator" 
                     src="./assets/images/nature.jpg" 
                     alt="Still Image of Trail-Finder"
@@ -219,7 +229,8 @@
                 </div>
                 <div 
                     class="card-content"
-                ><span 
+                >
+                 <span 
                     class="card-title 
                             activator 
                             grey-text 
@@ -232,13 +243,17 @@
                   >more_vert
                   </i>
                 </span>
-                <p><a 
+                <p
+                 class='flow-text
+                      valign-wrapper'
+                 >
+                  <a 
                     target="_blank"
                     href="https://github.com/jyothybaby/Trail-Finder"
                    ><img 
                    src="assets/images/github.png" 
                    />
-                   </a>
+                   </a>See Github
                 </p>
                 </div>
                <div
@@ -258,12 +273,13 @@
                 </span>          
                <p
                 class="light
-                        flow-text"
+                      flow-text"
                 >As a team we collaborated on ideas for an app. We then researched available web service APIs to support the app idea. We used an agile methodology and Github Projects Board to organize ourselves. We opted for slack to serve as our daily stand up meetings. We completed this project within the week time frame we were given.
                 </p>
                 <div
                     class="offset-s6"
-                  > <a
+                  >
+                    <a
                      target="_blank"
                      rel="noreferrer noopener"
                      href="https://jyothybaby.github.io/Trail-Finder/"
@@ -349,6 +365,7 @@
         > 
          <div 
           class="card
+              medium
               hoverable"
          > <div 
           class="card-image 
@@ -374,14 +391,19 @@
             >more_vert
             </i>
            </span>
-            <p><a 
+            <p
+              class='flow-text
+                    valign-wrapper'
+             >
+              <a 
                   target="_blank"
                   rel="noreferrer noopener"
                   href="https://adam-niggebrugge.github.io/Weather_City_App/"
-               ><img 
+               >
+                <img 
                   src="assets/images/github.png" 
                 />
-               </a>
+              </a>See Github
             </p>
           </div>
           <div 
@@ -403,17 +425,27 @@
               class="light
                      flow-text"
               >This app demonstrates use of a Server Side API Call. Uses HTML, CSS, JS, MomentJS and Boostrap. I was required to create an app that could provide weather results for any area searched by a user. 
-             </p>
              <div
-                  class="offset-s6"
+              class="offset-s6"
               > 
                <a
                   target="_blank"
                   rel="noreferrer noopener"
                   href="https://adam-niggebrugge.github.io/Weather_City_App/"
-                >Get Some Forecasts!
+                >
+                 <img 
+                   class="live-website"
+                   src="assets/images/live-website.png" 
+                  />
+                  <p
+                    class="col
+                            flow-text
+                            live-website-text"
+                  >Get Some Forecasts!
+                  </p>
                 </a>
               </div>
+             </p>
             </div>
           </div>
         </figure>
@@ -428,6 +460,7 @@
         > 
           <div 
             class="card
+                medium
                 hoverable"
           > 
             <div 
@@ -457,14 +490,19 @@
               >more_vert
               </i>
               </span>
-              <p><a 
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href="https://github.com/adam-niggebrugge/Code_Quiz_WEB_APIs"
-                  ><img 
+              <p
+               class='flow-text
+                    valign-wrapper'
+               >
+                <a 
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://github.com/adam-niggebrugge/Code_Quiz_WEB_APIs"
+                 >
+                   <img 
                      src="assets/images/github.png" 
                    />
-                  </a>
+                </a>See Github
               </p>
             </div>
             <div 
@@ -494,8 +532,18 @@
                     target="_blank"
                     rel="noreferrer noopener"
                     href="https://adam-niggebrugge.github.io/Code_Quiz_WEB_APIs/"
-                  >Quiz Time!
-                  </a>
+                  >
+                   <img 
+                    class="live-website"
+                    src="assets/images/live-website.png" 
+                   />
+                    <p
+                     class="col
+                           flow-text
+                           live-website-text"
+                    >Quiz Time!
+                    </p>
+                 </a>
                 </div>
                 </p>
             </div>
@@ -512,6 +560,7 @@
       > 
        <div 
         class="card
+          medium
           hoverable"
        > 
         <div 
@@ -541,7 +590,10 @@
          >more_vert
          </i>
          </span>
-        <p>
+         <p
+          class='flow-text
+               valign-wrapper'
+          >
            <a 
               target="_blank"
               rel="noreferrer noopener"
@@ -549,7 +601,7 @@
            ><img 
               src="assets/images/github.png" 
             />
-           </a>
+           </a>See Github
         </p>
       </div>
         <div 
@@ -573,14 +625,24 @@
                 flow-text"
             >This exercise was a demonstration of handling user inputs to return a "password" that meets those requests. This relied on basic Javascript without being connected to any HTML. When writing this code it was to understand uses of arrays and functions.
             <div
-                class="offset-s6"
-            > 
+              class="offset-s6"
+             > 
               <a
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href="https://adam-niggebrugge.github.io/03-Javascript-Password-Generator/"
-                >It's a secret to Everbody!
-              </a>
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://adam-niggebrugge.github.io/03-Javascript-Password-Generator/"
+               >
+                <img 
+                 class="live-website"
+                 src="assets/images/live-website.png" 
+                />
+                 <p
+                  class="col
+                      flow-text
+                      live-website-text"
+                 >It's a secret to Everbody!
+                </p>              
+               </a>
             </div>
           </p>
         </div>
@@ -589,21 +651,21 @@
     </div>
       <div 
         id="swipe-semantic" 
-        class="swipe-cust"
+        class="swipe-cust-alt"
       >      
        <figure
         class="section"
         > 
          <div 
           class="card
+            medium
             hoverable"
          > 
           <div 
            class="card-image 
             waves-effect 
             waves-block 
-            waves-light
-            medium"
+            waves-light"
           >
            <img 
             class="activator" 
@@ -623,23 +685,27 @@
            <i 
             class="material-icons 
             right"
-           >more_vert
+            >more_vert
            </i>
            </span>
-          <p>
+           <p
+            class='flow-text
+                 valign-wrapper'
+            >
              <a 
                 target="_blank"
                 rel="noreferrer noopener"
                 href="https://github.com/adam-niggebrugge/03-Javascript-Password-Generator"
-             ><img 
+             >
+              <img 
                 src="assets/images/github.png" 
               />
-             </a>
+             </a>See Github
           </p>
         </div>
           <div 
-          class="card-reveal"
-          > 
+            class="card-reveal"
+           > 
             <span 
               class="card-title 
                   grey-text 
@@ -658,13 +724,23 @@
                   flow-text"
               >This exercise to refactor the existing web page so that it would meet semantic HTML. Doing this makes the webpage have a higher SEO rating in web search tools. Better SEO ratings means being ranked higher in the returned results. Also semantic HTML is easier to read. This applies to both humans and machines. Thus web pages using good semantic HTML will be easier for screen readers to read.
               <div
-                  class="offset-s6"
-              > 
+                class="offset-s6"
+               > 
                 <a
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href="https://github.com/adam-niggebrugge/01-Horiseon_Refactored/blob/main/index.html"
-                  >View HTML
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://github.com/adam-niggebrugge/01-Horiseon_Refactored/blob/main/index.html"
+                 >
+                   <img 
+                    class="live-website"
+                    src="assets/images/live-website.png" 
+                   />
+                   <p
+                    class="col
+                          flow-text
+                          live-website-text"
+                   >View HTML
+                   </p>
                 </a>
               </div>
             </p>
@@ -689,8 +765,8 @@
         >
          <div 
             class="row center"
-         >
-          <h5 
+          >
+           <h5 
             class="header
                 col 
                 s12 
@@ -704,9 +780,9 @@
       <div
         class="parallax"
       ><img 
-            class="profile" 
-            alt="Black and White Profile Picture" 
-            src="./assets/images/ProfilePic.jpg"
+          class="profile" 
+          alt="Black and White Profile Picture" 
+          src="./assets/images/ProfilePic.jpg"
         />
       </div>
     </figure>
@@ -746,7 +822,7 @@
             </a>
             <p
               class="light
-                    flow-text"
+                  flow-text"
              >Check out my Github
             </p> 
           </li>
@@ -773,9 +849,9 @@
         semantic html for accessibilty standards, changed from div to footer v1.1.0-->
     <footer 
         class="banner-alt"
-    ><h4>Developed by I. A. Niggebrugge
+    ><h4>Developed by NAI
      </h4>
-     <h6>Built from Materialize Parallax Template         
+     <h6>Built on Materialize Parallax Template         
      </h6>
      <p
       class="flow-text"
