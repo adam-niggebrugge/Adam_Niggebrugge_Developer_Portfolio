@@ -15,7 +15,8 @@ Please look at the formatting of HTML, as I think I formatted in an interesting 
 ### Live URL
 [Click Here](https://adam-niggebrugge.github.io/Adam_Niggebrugge_Developer_Portfolio/)
 
-## Contributions
-Well since this is a display of my personal skills and understanding, there can only be one 😂.
-#### Contributors
-[A. Niggebrugge](https://github.com/adam-niggebrugge), fledgling C#, Javascript HTML & CSS acquintated, SQL familiar developer. On the road to being a promoter of Materialize.  
+
+### Questions??
+[A. Niggebrugge](https://github.com/adam-niggebrugge), fledgling C#, Javascript HTML & CSS acquintated, SQL familiar developer. On the road to being a promoter of Materialize. 
+[Email me](mailto:adam.niggebrugge@gmail.com)
+
