@@ -48,251 +48,99 @@
         class="right
             hide-on-med-and-down"
         ><li>
-            <a 
-              class="btn
-                    btn-cust"  
-              href="#home"
-            >
-             <h6>Home
-             </h6>
+            <a class="btn btn-cust"  
+              href="#home">
+             <h6>Home</h6>
             </a>
         </li>
         <li>
-            <a 
-             class="btn
-                    btn-cust  
-                    modal-trigger"
-              href="#personal"
-            ><h6>About Me
-             </h6>
+            <a class="btn btn-cust modal-trigger" href="#personal">
+              <h6>About Me</h6>
             </a>
         </li>
         <li>
-            <a
-             class="btn 
-                    btn-cust"  
-             href="#portfolio"
-            ><h6>Portfolio
-             </h6>
+            <a class="btn btn-cust" href="#portfolio">
+             <h6>Portfolio</h6>
             </a>
         </li>
         <li>
-            <a
-             class="btn
-                    btn-cust"  
-             href="#Contact"
-             onclick="switchPages(event)"
-            ><h6>Contact Me
-             </h6>
+            <a class="btn btn-cust" href="#Resume">
+              <h6>Resume</h6>
             </a>
         </li>
       </ul>
 <!-- lists to be shown when mobile viewing -->
-      <a 
-        href="#home" 
-        data-target="nav-mobile" 
-        class="sidenav-trigger"
-        ><i 
-          class="material-icons"
-          >menu
-        </i>
+      <a href="#home" data-target="nav-mobile" class="sidenav-trigger">
+        <i  class="material-icons">menu</i>
       </a>
-      <ul
-        id="nav-mobile"
-        class="sidenav
-                cust-sidenav"
-        ><li>
-            <a 
-              class="btn
-                     btn-cust
-                     sidenav-close"  
-              href="#home"
-            >Home
-            </a>
+      <ul id="nav-mobile" class="sidenav cust-sidenav">
+        <li>
+            <a class="btn btn-cust sidenav-close"  href="#home">Home</a>
          </li>
          <li>
-            <a 
-             class="btn
-                    btn-cust
-                    sidenav-close
-                    modal-trigger"
-             href="#personal"
-            >About
-            </a>
+            <a  class="btn btn-cust sidenav-close modal-trigger" href="#personal">About</a>
          </li>
          <li>
-            <a
-             class="btn
-                    btn-cust
-                    sidenav-close"
-             href="#portfolio"
-            >Work Portfolio
-            </a>
+            <a class="btn btn-cust sidenav-close" href="#portfolio">Work Portfolio</a>
          </li>
          <li>
-            <a
-              class="btn
-                     btn-cust
-                     sidenav-close"
-             onclick="switchPages(event)"
-             href="#Contact"
-            >Contact Me
-            </a>
+            <a class="btn btn-cust sidenav-close" href="#Resume">Resume</a>
          </li>
       </ul>
      </div>
     </nav>
   </div>
-    <header 
-        id="index-banner"
-        class="parallax-container"
-    ><div 
-        class="section
-                no-pad-bot"
-     ><div
-        class="container
-                "
-      ><h2 
-          class="header
-                center
-                offset-s2
-                page-title"
-         >Welcome, I am  
-         <span 
-            class="header-name"
-         >Adam Niggebrugge
-         </span>
-        </h2>
-        <div 
-            class="row 
-            right-aligned"
-        ><h5 
-            class="col
-                offset-s6
-                s6
-                banner-alt"
-          >A Full Stack Web Developer
-          </h5>    
-         </div>
-     </div>
-     <div
-        class="parallax"    
-     ><img 
-        class="transform" 
-        src="./assets/images/ProfilePic.jpg"
-      />
-     </div>
-     </div>
+    <header id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+            <h2 class="header center offset-s2 page-title">Welcome, I am 
+              <span class="header-name">Adam Niggebrugge</span>
+            </h2>
+            <div class="row  right-aligned">
+              <h5  class="col offset-s6 s6 banner-alt">A Full Stack Web Developer</h5>    
+            </div>
+        </div>
+        <div class="parallax">
+          <img  class="transform" src="./assets/images/ProfilePic.jpg"/>
+        </div>
+      </div>
     </header>
 
-    
 <!-- Here is our page's main content, semantic html for accessibilty standards-->
     <main>
 <!-- Here an article since this content could be a blog or something-->
-        <article 
-            class="container"
-         ><!-- Here a section of the article focused on online perception -->
-          <h3
-            id="portfolio"
-            class="banner"
-           >Portfolio Work :
+        <article class="container">
+<!-- Here a section of the article focused on online perception -->
+          <h3 id="portfolio" class="banner">Portfolio Work :
           </h3>
-            <section 
-                class="section"
-            >
-             <div
-              class="row
-                    cust-row"
-             >
-    <!-- Each figure should be a template for small self contained objects  -->
-              <figure 
-               class="col 
-                s12 
-                m12
-                l12"
-              > 
-               <div 
-                class="card
-                    medium
-                    hoverable"
-               > 
-                <div 
-                  class="card-image 
-                    waves-effect 
-                    waves-block 
-                    waves-light"
-                >
-                 <img 
-                    class="activator" 
-                    src="./assets/images/nature.jpg" 
-                    alt="Still Image of Trail-Finder"
-                 />
+            <section  class="section">
+             <div class="row cust-row">
+<!-- Each figure should be a template for small self contained objects  -->
+              <figure class="col s12 m12 l12"> 
+               <div  class="card  medium hoverable"> 
+                <div class="card-image  waves-effect  waves-block  waves-light">
+                 <img  class="activator"  src="./assets/images/nature.jpg"  alt="Still Image of Trail-Finder"/>
                 </div>
-                <div 
-                    class="card-content"
-                >
-                 <span 
-                    class="card-title 
-                            activator 
-                            text-darken-4
-                            banner"
-                 >A Collaborative Project
-                  <i 
-                    class="material-icons 
-                            right"
-                  >more_vert
-                  </i>
-                </span>
-                <p
-                 class='flow-text
-                      valign-wrapper'
-                 >
-                  <a 
-                    target="_blank"
-                    href="https://github.com/jyothybaby/Trail-Finder"
-                   ><img 
-                   src="assets/images/github.png" 
-                   />
-                   </a>See Github
-                </p>
+                <div class="card-content">
+                  <span  class="card-title  activator  text-darken-4 banner">A Collaborative Project
+                    <i  class="material-icons  right">more_vert</i>
+                  </span>
+                  <p class='flow-text valign-wrapper'>
+                    <a target="_blank" href="https://github.com/jyothybaby/Trail-Finder">
+                      <img  src="assets/images/github.png"/>
+                    </a>See Github
+                  </p>
                 </div>
-               <div
-                 class="card-reveal"
-               ><span
-                 class="card-title
-                        text-darken-4
-                        banner-alt"
-                >Trail Finder
-                 <i 
-                  class="material-icons 
-                         right
-                         cust-icon"
-                 >close
-                 </i>
-                </span>          
-               <p
-                class="light
-                      flow-text"
-                >As a team we collaborated on ideas for an app. We then researched available web service APIs to support the app idea. We used an agile methodology and Github Projects Board to organize ourselves. We opted for slack to serve as our daily stand up meetings. We completed this project within the week time frame we were given.
-                </p>
-                <div
-                    class="offset-s6"
-                 >
-                  <a
-                     target="_blank"
-                     rel="noreferrer noopener"
-                     href="https://jyothybaby.github.io/Trail-Finder/"
-                  > 
-                   <img 
-                   class="live-website"
-                   src="assets/images/live-website.png" 
-                  />
-                   <p
-                    class="col
-                         flow-text
-                         live-website-text"
-                   >Trail-Finder Site
-                   </p>  
+               <div class="card-reveal">
+                 <span class="card-title text-darken-4 banner-alt">Trail Finder
+                  <i  class="material-icons right cust-icon">close</i>
+                 </span>          
+                 <p class="light flow-text">As a team we collaborated on ideas for an app. We then researched available web service APIs to support the app idea. We used an agile methodology and Github Projects Board to organize ourselves. We opted for slack to serve as our daily stand up meetings. We completed this project within the week time frame we were given.
+                 </p>
+                <div class="offset-s6">
+                  <a target="_blank" rel="noreferrer noopener" href="https://jyothybaby.github.io/Trail-Finder/"> 
+                   <img class="live-website" src="assets/images/live-website.png" />
+                   <p class="col flow-text live-website-text">Trail-Finder Site</p>  
                   </a>
                 </div>
                </div>
@@ -594,57 +442,21 @@
          >more_vert
          </i>
          </span>
-         <p
-          class='flow-text
-               valign-wrapper'
-          >
-           <a 
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://github.com/adam-niggebrugge/03-Javascript-Password-Generator"
-           ><img 
-              src="assets/images/github.png" 
-            />
+         <p class='flow-text valign-wrapper'>
+           <a  target="_blank" rel="noreferrer noopener" href="https://github.com/adam-niggebrugge/03-Javascript-Password-Generator">
+            <img  src="assets/images/github.png" />
            </a>See Github
         </p>
       </div>
-        <div 
-        class="card-reveal"
-        > 
-          <span 
-            class="card-title 
-                text-darken-4
-                banner-alt"
-            >Need a Password
-            <i 
-              class="material-icons 
-                    right
-                    cust-icon"
-              >close
-            </i>
+        <div class="card-reveal"> 
+          <span class="card-title text-darken-4 banner-alt">Need a Password
+            <i class="material-icons right cust-icon">close</i>
           </span>
-          <p
-            class="light
-                flow-text"
-            >This exercise was a demonstration of handling user inputs to return a "password" that meets those requests. This relied on basic Javascript without being connected to any HTML. When writing this code it was to understand uses of arrays and functions.
-            <div
-              class="offset-s6"
-             > 
-              <a
-                target="_blank"
-                rel="noreferrer noopener"
-                href="https://adam-niggebrugge.github.io/03-Javascript-Password-Generator/"
-               >
-                <img 
-                 class="live-website"
-                 src="assets/images/live-website.png" 
-                />
-                 <p
-                  class="col
-                      flow-text
-                      live-website-text"
-                 >It's a secret to Everbody!
-                </p>              
+          <p class="light flow-text">This exercise was a demonstration of handling user inputs to return a "password" that meets those requests. This relied on basic Javascript without being connected to any HTML. When writing this code it was to understand uses of arrays and functions.
+            <div class="offset-s6"> 
+              <a target="_blank" rel="noreferrer noopener" href="https://adam-niggebrugge.github.io/03-Javascript-Password-Generator/">
+                <img  class="live-website" src="assets/images/live-website.png"/>
+                <p class="col flow-text live-website-text">It's a secret to Everbody!</p> 
                </a>
             </div>
           </p>
@@ -652,96 +464,31 @@
         </div>
       </figure>
     </div>
-      <div 
-        id="swipe-semantic" 
-        class="swipe-cust-alt"
-      >      
-       <figure
-        class="section"
-        > 
-         <div 
-          class="card
-            medium
-            hoverable"
-         > 
-          <div 
-           class="card-image 
-            waves-effect 
-            waves-block 
-            waves-light"
-          >
-           <img 
-            class="activator" 
-            src="./assets/images/HTML_Semantic.jpg"
-            />
+      <div  id="swipe-semantic" class="swipe-cust-alt">      
+       <figure class="section"> 
+         <div class="card medium hoverable"> 
+          <div class="card-image  waves-effect  waves-block  waves-light">
+           <img class="activator"  src="./assets/images/HTML_Semantic.jpg"/>
           </div>
-          <div 
-            class="card-content"
-          >
-           <span 
-            class="card-title 
-                    activator 
-                    text-darken-4
-                    banner"
-           >Semantic HTML
-           <i 
-            class="material-icons 
-            right"
-            >more_vert
-           </i>
+          <div  class="card-content">
+           <span class="card-title activator text-darken-4 banner">Semantic HTML
+            <i  class="material-icons  right">more_vert</i>
            </span>
-           <p
-            class='flow-text
-                 valign-wrapper'
-            >
-             <a 
-                target="_blank"
-                rel="noreferrer noopener"
-                href="https://github.com/adam-niggebrugge/03-Javascript-Password-Generator"
-             >
-              <img 
-                src="assets/images/github.png" 
-              />
+           <p class='flow-text valign-wrapper'>
+             <a target="_blank" rel="noreferrer noopener" href="https://github.com/adam-niggebrugge/03-Javascript-Password-Generator">
+              <img  src="assets/images/github.png" />
              </a>See Github
           </p>
         </div>
-          <div 
-            class="card-reveal"
-           > 
-            <span 
-              class="card-title 
-                  text-darken-4
-                  banner-alt"
-              >Easier to Read HTML
-              <i 
-                class="material-icons 
-                      right
-                      cust-icon"
-                >close
-              </i>
+          <div class="card-reveal"> 
+            <span  class="card-title text-darken-4 banner-alt">Easier to Read HTML
+              <i class="material-icons right cust-icon">close</i>
             </span>
-            <p
-              class="light
-                  flow-text"
-              >This exercise to refactor the existing web page so that it would meet semantic HTML. Doing this makes the webpage have a higher SEO rating in web search tools. Better SEO ratings means being ranked higher in the returned results. Also semantic HTML is easier to read. This applies to both humans and machines. Thus web pages using good semantic HTML will be easier for screen readers to read.
-              <div
-                class="offset-s6"
-               > 
-                <a
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href="https://github.com/adam-niggebrugge/01-Horiseon_Refactored/blob/main/index.html"
-                 >
-                   <img 
-                    class="live-website"
-                    src="assets/images/live-website.png" 
-                   />
-                   <p
-                    class="col
-                          flow-text
-                          live-website-text"
-                   >View HTML
-                   </p>
+            <p class="light flow-text">This exercise to refactor the existing web page so that it would meet semantic HTML. Doing this makes the webpage have a higher SEO rating in web search tools. Better SEO ratings means being ranked higher in the returned results. Also semantic HTML is easier to read. This applies to both humans and machines. Thus web pages using good semantic HTML will be easier for screen readers to read.
+              <div class="offset-s6"> 
+                <a target="_blank" rel="noreferrer noopener" href="https://github.com/adam-niggebrugge/01-Horiseon_Refactored/blob/main/index.html">
+                   <img  class="live-website" src="assets/images/live-website.png" />
+                   <p class="col flow-text live-website-text">View HTML</p>
                 </a>
               </div>
             </p>
@@ -754,111 +501,55 @@
   </div>
   </section>
 
-    <figure
-        class="parallax-container 
-               valign-wrapper"
-    >
-     <div
-      class="section no-pad-bot"
-     >
-      <div 
-        class="container"
-        >
-         <div 
-            class="row center"
-          >
-           <h5 
-            class="header
-                col 
-                s12 
-                light 
-                profile-caption"
-           >I don't always look this sharp, but for special days I do.
+    <figure class="parallax-container valign-wrapper">
+     <div class="section no-pad-bot">
+      <div class="container" >
+         <div  class="row center">
+           <h5 class="header col  s12  light profile-caption">I don't always look this sharp, but for special days I do.
            </h5>
          </div>
         </div>
       </div>
-      <div
-        class="parallax"
-      ><img 
-          class="profile" 
-          alt="Black and White Profile Picture" 
-          src="./assets/images/ProfilePic.jpg"
-        />
+      <div class="parallax">
+        <img  class="profile"  alt="Black and White Profile Picture" src="./assets/images/ProfilePic.jpg"/>
       </div>
     </figure>
  <!-- Modal Structure -->
- <div 
-    id="personal" 
-    class="modal 
-        bottom-sheet"
- >
-  <div 
-   class="modal-content"
-  >
-   <h4>
-    About Me
-   </h4>
-      <p
-       class="light
-          flow-text"
-       >Thank you for checking out my portfolio page! I am still new to the developer scene, getting my feet wet. I have taken structured classes at the high school level (1998, 99) and college 200 level (2006) using C++ and Visual Studio. Those classes focused on common logic sets to iterate to a solution and little beyond console applications. Now 20 years later I am scratching the itch to learn more and become an active full stack developer! I am currently enrolled in a coding bootcamp. If you would like to learn more about me, on a 
-        <a 
-          href="https://adam-niggebrugge.github.io/prework-about-me/" 
-          target="blank"
-          rel="noreferrer noopener"
-          >personal level
-        </a> 
-        , please click away.
+ <div id="personal" class="modal  bottom-sheet">
+  <div class="modal-content">
+   <h4>About Me</h4>
+      <p class="light flow-text">Thank you for checking out my portfolio page! I am still new to the developer scene, getting my feet wet. I have taken structured classes at the high school level (1998, 99) and college 200 level (2006) using C++ and Visual Studio. Those classes focused on common logic sets to iterate to a solution and little beyond console applications. Now 20 years later I am scratching the itch to learn more and become an active full stack developer! I am currently enrolled in a coding bootcamp. If you would like to learn more about me, on a 
+        <a href="https://adam-niggebrugge.github.io/prework-about-me/"  target="blank" rel="noreferrer noopener" >personal level
+        </a>, please click away.
       </p>
-        <ul
-          class="light
-          flow-text"
-        >
+        <ul class="light flow-text">
           <li>
             <p>
-             <a           
-              target="blank"
-              rel="noreferrer noopener"
-              href="https://github.com/adam-niggebrugge"
-             >
-              <img 
-                class="custom-image"
-                src="assets/images/github.png" 
-              />
+             <a target="blank" rel="noreferrer noopener" href="https://github.com/adam-niggebrugge">
+              <img  class="custom-image" src="assets/images/github.png" />
              </a>
             </p> 
           </li>
           <li>
             <p>
-              <a           
-               target="blank"
-               rel="noreferrer noopener"
-               href="www.linkedin.com/in/adam-niggebrugge"
-              >
-               <img 
-                 class="custom-image"
-                 src="assets/images/linkedIN.png" 
-               />
+              <a target="blank" rel="noreferrer noopener" href="www.linkedin.com/in/adam-niggebrugge">
+               <img  class="custom-image" src="assets/images/linkedIN.png"/>
               </a>
-             </p> 
+            </p> 
             <!--other links or images can be added as list elements-->
           </li>
         </ul>
     </div>
     <div class="modal-footer">
-      <a 
-        href="#!" 
-        class="modal-close
-            btn 
-            btn-cust
-            waves-effect 
-            waves-green "
-        >Close
+      <a href="#!" class="modal-close btn btn-cust waves-effect waves-green">Close
       </a>
     </div>
   </div>
-    
+  <div  id="resume" class="modal">
+    <div class="modal-content">
+      <iframe src="./assets/images/niggebrugge_resume.pdf"></iframe>
+    </div>
+  </div>
     </main>
 <!-- Here is our page's footer content, updated copyright to this year?, 
         semantic html for accessibilty standards, changed from div to footer v1.1.0-->
