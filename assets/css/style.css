@@ -182,6 +182,10 @@ footer > *{
   vertical-align: baseline; 
 }
 
+.custom-image{
+  max-width: 1.66em;
+}
+
 @keyframes blink {
   from, to {opacity: 1}
   66% {opacity: 0.66}
