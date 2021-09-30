@@ -1,4 +1,6 @@
 const contactPage = 'contact.html';
+const divOverlayEl = document.getElementsByClassName('.sidenav-overlay');
+const bodyEl = document.getElementById('mainBody');
 
 //This creates a listner event that will call
 window.onscroll = function() {stickyElement()};
@@ -71,8 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   const sideNavEls = document.querySelectorAll('.sidenav');
   const instances = M.Sidenav.init(sideNavEls, {
-    preventScrolling: false
+    preventScrolling: true
   });
+  instances.isFixed = true;
 });
 
 document.addEventListener('DOMContentLoaded', function() {

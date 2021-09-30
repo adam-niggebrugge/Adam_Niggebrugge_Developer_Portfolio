@@ -139,6 +139,7 @@ footer > *{
  }
 
  .custom-sidenav{
+   overflow: hidden;
    background-color: var(--neutral);
    counter-reset: var(--dark);
  }
@@ -281,5 +282,6 @@ footer > *{
     max-width: 25%;
     border-radius: 25px;
     z-index: 4;
+    overflow-x: hidden;
   }
 }
