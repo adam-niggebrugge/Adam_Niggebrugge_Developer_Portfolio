@@ -1,0 +1,31 @@
+{
+  "name": "portfolio_shell",
+  "version": "2.0.0",
+  "description": "Reset the idea of portfolio maintenace by creating a database to hold links, titles, images for work",
+  "main": "server.js",
+  "scripts": {
+    "test": "TODO"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adam-niggebrugge/Adam_Niggebrugge_Developer_Portfolio.git"
+  },
+  "keywords": [
+    "Handlebars",
+    "Express",
+    "NodeJS"
+  ],
+  "author": "Ivor Adam Niggebrugge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adam-niggebrugge/Adam_Niggebrugge_Developer_Portfolio/issues"
+  },
+  "homepage": "https://github.com/adam-niggebrugge/Adam_Niggebrugge_Developer_Portfolio#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "sessions": "^0.0.2-7"
+  }
+}
