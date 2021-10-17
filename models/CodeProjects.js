@@ -16,6 +16,22 @@ Code_Project.init(
           allowNull: false,
 
       },
+      body: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+     },
+     site_link: {
+        type: DataTypes.STRING,
+        allowNull: false,
+     },
+     git_link: {
+        type: DataTypes.STRING,
+        allowNull: false,
+     },
+     image_path: {
+        type: DataTypes.STRING,
+        allowNull: false,
+     },
       sequelize,
       timestamps: false,
       freezeTableName: true,
