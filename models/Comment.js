@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection');
 
 class Comment extends Model {}
@@ -18,11 +17,12 @@ Comment.init({
            len: [3]
         }
     },
-    commentor_name: {
+    user_id: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-           len: [3]
+        references: {
+            model: 'user',
+            key: 'id'
         }
     },
 }, 

@@ -4,7 +4,8 @@
   "description": "Reset the idea of portfolio maintenace by creating a database to hold links, titles, images for work",
   "main": "server.js",
   "scripts": {
-    "test": "TODO"
+    "test": "TODO",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "express-session": "^1.17.2",
     "mysql2": "^2.3.2",
     "nodemon": "^2.0.13",
+    "sequelize": "^6.7.0",
     "sessions": "^0.0.2-7"
   }
 }
