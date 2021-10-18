@@ -1,6 +1,6 @@
 //Connection between tables
 const User = require('./User');
-const CodeProject = require('./CodeProjects');
+const CodeProject = require('./CodeProject');
 const Comment = require('./Comment');
 
 

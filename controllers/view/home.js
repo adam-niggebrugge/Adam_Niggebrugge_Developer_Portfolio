@@ -1,11 +1,10 @@
 const router = require('express').Router();
-const { Code_Projects } = require('../../models');
+const { CodeProject } = require('../../models');
 
-
-router.get('/', async (req, res) => {
+router.get('/projects', async (req, res) => {
     try{
 
-        const codeProjectData = await Code_Projects.findAll({});
+        const codeProjectData = await CodeProject.findAll({});
 
             const projectsMap = codeProjectData.map((project) => project.get({plain:true}));
             res.render("project", {projects: projectsMap});
