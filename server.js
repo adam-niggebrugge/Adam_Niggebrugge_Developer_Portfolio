@@ -24,7 +24,7 @@ const sess = {
 
 const app = express();
 //process.env.PORT allows heroku to set up the port
-const PORT = process.env.PORT || 3025;
+const PORT = process.env.PORT || 3002;
 // Set up Handlebars.js engine with custom helpers
 // Inform Express.js on which template engine to use
 app.engine(".hbs", exphbs({ extname: ".hbs", helpers: hbsHelpers}));
