@@ -14,11 +14,8 @@ CodeProject.init(
       title:{
           type: DataTypes.STRING,
           allowNull: false,
+
       },
-      describingTitle:{
-         type: DataTypes.STRING,
-         allowNull: false,
-     },
       body: {
         type: DataTypes.TEXT,
         allowNull: false,
@@ -32,10 +29,6 @@ CodeProject.init(
         allowNull: false,
      },
      image_path: {
-        type: DataTypes.STRING,
-        allowNull: false,
-     },
-     altImageText: {
         type: DataTypes.STRING,
         allowNull: false,
      },
