@@ -1,1 +1,30 @@
 <h1>I am a project page!</h1>
+<article class="col s12 m12 l12"> 
+    <details  class="card  medium hoverable"> 
+        <figure class="card-image  waves-effect  waves-block  waves-light">
+            <img  class="activator"  src="{{imagePath}}"  alt="{{altImageText}}"/>
+        </figure>
+        <div class="card-content">
+            <span  class="card-title  activator  text-darken-4 banner">{{describingTitle}}
+            <i  class="material-icons  right">more_vert</i>
+            </span>
+            <p class='flow-text valign-wrapper'>
+            <a target="_blank" href="{{gitLink}}">
+                <img  src="assets/images/github.png"/>
+            </a>See Github
+            </p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title text-darken-4 banner-alt">{{title}}
+            <i  class="material-icons right cust-icon">close</i>
+            </span>          
+            <p class="light flow-text">{{body}}</p>
+            <div class="offset-s6">
+                <a target="_blank" rel="noreferrer noopener" href="{{siteLink}}"> 
+                <img class="live-website" src="assets/images/live-website.png" />
+                <p class="col flow-text live-website-text">{{title}} Site</p>  
+                </a>
+            </div>
+        </div>
+    </details>
+</article> 
