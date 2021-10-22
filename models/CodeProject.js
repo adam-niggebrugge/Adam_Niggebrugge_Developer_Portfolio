@@ -15,7 +15,7 @@ CodeProject.init(
           type: DataTypes.STRING,
           allowNull: false,
       },
-      describingTitle:{
+      describing_title:{
          type: DataTypes.STRING,
          allowNull: false,
      },
@@ -35,10 +35,14 @@ CodeProject.init(
         type: DataTypes.STRING,
         allowNull: false,
      },
-     altImageText: {
+     alt_image_text: {
         type: DataTypes.STRING,
         allowNull: false,
      },
+     is_group_project: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+   },
    }, 
    {
       sequelize,
