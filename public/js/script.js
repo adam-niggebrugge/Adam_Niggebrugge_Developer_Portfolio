@@ -3,18 +3,18 @@ const divOverlayEl = document.getElementsByClassName('.sidenav-overlay');
 const bodyEl = document.getElementById('mainBody');
 
 //This creates a listner event that will call
-// window.onscroll = function() {stickyElement()};
+window.onscroll = function() {stickyElement()};
 
 const navbar = document.getElementById("navbar");
-//const sticky = navbar.offsetTop;
+const sticky = navbar.offsetTop;
 
-// function stickyElement() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// };
+function stickyElement() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+};
 
 /**
  * This initializes the modal window to open when triggered
@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
   
 // //Materialize instance to activate the carousel functionality
-// document.addEventListener('DOMContentLoaded', function() {
-//   const carouselEls = document.querySelectorAll('.carousel');
-//   const carouselInstances = M.Carousel.init(carouselEls, {
-//     numVisible: 0, 
-//     noWrap: true, 
-//     indicators: true
-//   });
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselEls = document.querySelectorAll('.carousel');
+  const carouselInstances = M.Carousel.init(carouselEls, {
+    numVisible: 0, 
+    noWrap: true, 
+    indicators: true
+  });
+});
 
 /**
 * edge	[String	'left']	Side of screen on which Sidenav appears.
@@ -70,13 +70,13 @@ document.addEventListener('DOMContentLoaded', function() {
 * onCloseEnd	[Function	null]	Function called when sidenav finishes exiting.
 * preventScrolling	[Boolean	true]	Prevent page from scrolling while sidenav is open.
  */
-// document.addEventListener('DOMContentLoaded', function() {
-//   const sideNavEls = document.querySelectorAll('.sidenav');
-//   const instances = M.Sidenav.init(sideNavEls, {
-//     preventScrolling: true
-//   });
-//   instances.isFixed = true;
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  const sideNavEls = document.querySelectorAll('.sidenav');
+  const instances = M.Sidenav.init(sideNavEls, {
+    preventScrolling: true
+  });
+  instances.isFixed = true;
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   const parallaxEl = document.querySelectorAll('.parallax');
