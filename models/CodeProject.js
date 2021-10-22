@@ -42,7 +42,11 @@ CodeProject.init(
      is_group_project: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
-   },
+     },
+     valid_from_date: {
+         type: DataTypes.DATE,
+         allowNull: false,
+     },
    }, 
    {
       sequelize,
