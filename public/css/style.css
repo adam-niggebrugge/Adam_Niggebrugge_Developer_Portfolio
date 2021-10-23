@@ -206,10 +206,10 @@ footer > *{
   background-color: var(--bold-contrast-tranparancy);
 }
 
-.cust-sidenav li>a {
+/* .cust-sidenav li>a {
   width: 50%;
   font-size: x-small;
-}
+} */
 
 @keyframes blink {
   from, to {opacity: 1}
