@@ -1,7 +1,7 @@
 /* color pallete options for consistency */
 :root {
   --dark: #000000;
-  --dark-transparancy: #00000070;
+  --dark-transparancy: #00000054;
   --highlight:#7AE7C7;
   --mildlight: #D6FFB7;
   --attention-highlight: #FFF689;
@@ -90,6 +90,10 @@ footer > *{
   text-align: center;
 }
 
+#mainBody{
+  background-color: var(--neutral-tranparancy);
+}
+
 #personal{
   margin: 2em;
   background-color: var(--neutral);
@@ -155,7 +159,14 @@ footer > *{
 
 .btn-cust{
   background-color: var(--highlight);
+  border-radius: 20px;
 }  
+
+.btn-cust:hover{
+  background-color: var(--mildlight);
+  color: var(--bold-contrast);
+  border-radius: 18px;
+} 
 
 .link-cust{
   color: var(--mildlight);
@@ -185,8 +196,42 @@ footer > *{
 
 .custom-image{
   max-width: 1.66em;
+  color: var(--attention-highlight);
 }
 
+.cust-up-margin{
+  margin-top: -2em;
+}
+
+.cust-body-col{
+  background-color: var(--bold-contrast-tranparancy);
+}
+
+/* .cust-sidenav li>a {
+  width: 50%;
+  font-size: x-small;
+} */
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.cust-forum{
+  background-color: var(--bold);
+  color: var(--dark);
+}
+
+.comments{
+  background-color: var(--light);
+  color: var(--bold);
+}
 @keyframes blink {
   from, to {opacity: 1}
   66% {opacity: 0.66}
@@ -212,14 +257,13 @@ footer > *{
   }
 
   .banner-alt{
-    font-size: 2.33em;
     padding: .5em;
   }
 
- .banner{
+ /* .banner{
     font-size: 1.8em;
     padding: .33em;
-  }
+  } */
 
  .card .card-title,
  .card-title {
@@ -237,10 +281,15 @@ footer > *{
 
  .sticky {
   max-width: 10%;
+  margin: .75em;
   border-radius: 25px;
-  z-index: 4;
-}
+  z-index: 6;
+  overflow-x: hidden;
+ }
 
+ .cust-up-margin{
+  margin-top: -.5em;
+ }
 }
 
 @media only screen and (max-width : 600px) {
@@ -256,14 +305,14 @@ footer > *{
   }
 
   .banner-alt{
-    font-size: 1.33em;
-  }
-
+    padding: 0;
+  } 
+  
   .banner{
     font-size: 1.2em;
     padding: .25em;
   }
- 
+
   .card .card-title,
   .card-title {
     font-size: 1.2em;
@@ -279,9 +328,11 @@ footer > *{
   }
 
   .sticky {
-    max-width: 25%;
-    border-radius: 25px;
-    z-index: 4;
+    max-width: 15%;
+    margin: .5em;
+    border-radius: 30px;
+    z-index: 6;
     overflow-x: hidden;
   }
 }
+

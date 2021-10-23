@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
   
 // //Materialize instance to activate the carousel functionality
-// document.addEventListener('DOMContentLoaded', function() {
-//   const carouselEls = document.querySelectorAll('.carousel');
-//   const carouselInstances = M.Carousel.init(carouselEls, {
-//     numVisible: 0, 
-//     noWrap: true, 
-//     indicators: true
-//   });
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselEls = document.querySelectorAll('.carousel');
+  const carouselInstances = M.Carousel.init(carouselEls, {
+    numVisible: 0, 
+    noWrap: true, 
+    indicators: true
+  });
+});
 
 /**
 * edge	[String	'left']	Side of screen on which Sidenav appears.

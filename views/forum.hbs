@@ -1,0 +1,46 @@
+<article  id="index-banner" class="container">
+  <section  class="section no-pad-bot">
+    
+      <h2  class="header center offset-s2 page-title">Welcome, to my  
+      <span  class="header-name" >Review Forum</span></h2>
+      <p class="floq">This area is meant for comments from users, clients about what they like or dislike with my website design.</p>
+   
+  </section>
+</article>
+<details class="container comments">
+  {{#if comments.length}}
+      {{#each comments as |comment|}}
+          {{> comment }}
+      {{/each}}
+  {{else}}
+    <h3>Dang, nobody loves me enough to leave a comment. &#128517;</h3>
+  {{/if}}
+ </details>
+
+<article class="row">
+  <form id="comment-form" class="col s12 cust-forum">
+    <section class="row">
+      <div class="input-field  col s6">
+        <input  placeholder="Name" id="first_name" 
+          type="text"  class="validate"/>
+          <label  for="first_name">Name</label>
+      </div>
+    </section>
+    <section class="row">
+      <div class="input-field col s12">
+        <input  id="email"  type="email" class="validate" placeholder="You will never be contacted or added to a list.">
+          <label for="email">Email</label>
+      </div>
+    </section>
+    <section class="row">
+      <div class="input-field col s12">
+            <textarea id="comment" class="materialize-textarea" onkeyup="this.value = this.value.replace(/[*<>]/g, '')"></textarea>
+            <label for="textarea1">Any Comment is welcomed!</label>
+      </div>
+      <button type="submit" class="btn btn-cust right">Submit</button>
+    </section>
+  </form>
+</article>
+
+
+<script src="/js/forum.js"></script>

@@ -1,1 +1,9 @@
-<h1>I am a project page!</h1>
+<h3>A sampling of Coding Projects</h3>
+<h5>Below are some coding efforts I have done. They are listed in a descending chronological order of activity. Most include live websites and all include the repository for deeper explainations.</h5>
+{{#if projects.length}}
+    {{#each projects as |project|}}
+        {{> projectCard }}
+    {{/each}}
+{{else}}
+    <h2>No Projects Currently Found!!!</h2>
+{{/if}}

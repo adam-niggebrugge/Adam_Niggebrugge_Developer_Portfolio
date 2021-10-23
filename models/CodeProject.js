@@ -16,6 +16,10 @@ CodeProject.init(
           allowNull: false,
 
       },
+      describing_title:{
+         type: DataTypes.STRING,
+         allowNull: false,
+     },
       body: {
         type: DataTypes.TEXT,
         allowNull: false,
@@ -31,6 +35,18 @@ CodeProject.init(
      image_path: {
         type: DataTypes.STRING,
         allowNull: false,
+     },
+     alt_image_text: {
+        type: DataTypes.STRING,
+        allowNull: false,
+     },
+     is_group_project: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+     },
+     valid_from_date: {
+         type: DataTypes.DATE,
+         allowNull: false,
      },
    }, 
    {
