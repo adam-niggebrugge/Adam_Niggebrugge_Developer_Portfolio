@@ -14,6 +14,7 @@ CodeProject.init(
       title:{
           type: DataTypes.STRING,
           allowNull: false,
+
       },
       describing_title:{
          type: DataTypes.STRING,
