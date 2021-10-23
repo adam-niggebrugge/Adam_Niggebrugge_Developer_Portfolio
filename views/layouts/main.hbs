@@ -23,12 +23,12 @@
         <ul class="banner hide-on-med-and-down">
           <li class="cust-up-margin">
               <a class="btn btn-cust" href="#home">
-                <h6>Back to Top</h6>
+                <h6>Top</h6>
               </a>
           </li>
           <li class="cust-up-margin">
               <a class="btn btn-cust modal-trigger" href="/personal">
-                <h6>About Me</h6>
+                <h6>Personal</h6>
               </a>
           </li>
           <li class="cust-up-margin">
@@ -38,7 +38,7 @@
           </li>
           <li class="cust-up-margin">
             <a class="btn btn-cust" href="/forum">
-              <h6>Leave a Comment</h6>
+              <h6>Comment</h6>
             </a>
           </li>
           <li class="cust-up-margin">
@@ -55,16 +55,16 @@
 
         <ul id="nav-mobile" class="sidenav cust-sidenav banner">
           <li>
-              <a class="btn sidenav-close btn-cust" href="#home">Back to Top</a>
+              <a class="btn sidenav-close btn-cust" href="#home">Top</a>
           </li>
           <li>
               <a  class="btn sidenav-close btn-cust" href="/personal">About</a>
           </li>
           <li>
-              <a class="btn sidenav-close btn-cust" href="/">Work Portfolio</a>
+              <a class="btn sidenav-close btn-cust" href="/">Portfolio</a>
           </li>
           <li>
-              <a class="btn sidenav-close btn-cust" href="/forum">Leave a Comment</a>
+              <a class="btn sidenav-close btn-cust" href="/forum">Comment</a>
           </li>
           <li>
               <a class="btn btn-cust sidenav-close" target="_blank" href="/images/niggebrugge_resume.pdf">Resume</a>
@@ -74,25 +74,30 @@
   <main>
     <div class="container">
       <div class="row">
-        <div id="index-banner" class="parallax-container">
-          <div class="section no-pad-bot">
-            <div class="container">
-                <h2 class="header center offset-s2 page-title">Welcome, I am 
+        <div class="col  s12">
+          <h2 class="header center offset-s2 page-title">Welcome, I am 
                   <span class="header-name">Adam Niggebrugge</span>
-                </h2>
-                <div class="row  right-aligned">
-                  <h5  class="col offset-s6 s6 banner-alt">A Full Stack Web Developer</h5>    
-                </div>
-            </div>
-            <div class="parallax">
-              <img  class="transform" src="/images/ProfilePic.jpg"/>
+          </h2>
+        </div>
+        <div class="col s12">
+          <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+              <div class="container">
+                
+                  <div class="row  right-aligned">
+                    <h5  class="col offset-s6 s6 banner">A Full Stack Web Developer</h5>    
+                  </div>
+              </div>
+              <div class="parallax">
+                <img  class="transform" src="/images/ProfilePic.jpg"/>
+              </div>
             </div>
           </div>
         </div>
 <!-- Here an article since this content could be a blog or something-->
-        <div class="section no-pad-bot cust-body-col">
+        <div class="section no-pad-bot">
           <div class="row">
-            <div class="col">
+            <div class="col cust-body-col">
               {{{body}}}
 
               
@@ -122,20 +127,25 @@
     <p class="flow-text">Copyright 2021</p>
     <ul class="light flow-text">
           <li>
-            <p>
-             <a target="blank" rel="noreferrer noopener" href="https://github.com/adam-niggebrugge">
-              <img  class="custom-image" src="assets/images/github.png" />
+            <p>Check me out on GitHub
+             <a target="_blank" rel="noreferrer noopener" href="https://github.com/adam-niggebrugge">
+              <img  class="custom-image" src="/images/github.png" />
              </a>
             </p> 
           </li>
           <li>
-            <p>
+            <p>Check me out on LinkedIn
               <a target="_blank" rel="noreferrer noopener" href="http://www.linkedin.com/in/adam-niggebrugge">
-               <img  class="custom-image" src="assets/images/linkedIN.png"/>
+               <img  class="custom-image" src="/images/linkedIN.png"/>
               </a>
             </p> 
             <!--other links or images can be added as list elements-->
           </li>
+          <p>Send Feedback
+            <a href = "mailto:abc@example.com?subject = Feedback&body = Message">
+              <i class="material-icons custom-image">mail</i> 
+            </a>
+          </p>
         </ul>
   </footer>
 

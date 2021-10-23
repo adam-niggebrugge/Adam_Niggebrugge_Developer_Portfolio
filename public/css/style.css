@@ -1,7 +1,7 @@
 /* color pallete options for consistency */
 :root {
   --dark: #000000;
-  --dark-transparancy: #00000070;
+  --dark-transparancy: #00000054;
   --highlight:#7AE7C7;
   --mildlight: #D6FFB7;
   --attention-highlight: #FFF689;
@@ -196,6 +196,7 @@ footer > *{
 
 .custom-image{
   max-width: 1.66em;
+  color: var(--attention-highlight);
 }
 
 .cust-up-margin{
