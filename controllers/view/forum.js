@@ -4,7 +4,8 @@ const { Comment } = require('../../models');
 router.get('/', async (req, res) => {
     try{ //find projects and then order them by date made
         const commentData = await Comment.findAll({
-            order: [["valid_from_date", "DESC"]]
+            attributes: ["body", "created_at", "user_name"],
+            order: [["created_at", "DESC"]]
         });
         const commentsMap = commentData.map((comment) => comment.get({plain:true}));
         res.render("forum", {comments: commentsMap});      

@@ -7,11 +7,10 @@
    
   </section>
 </article>
-<details class="container">
+<details class="container comments">
   {{#if comments.length}}
-  
       {{#each comments as |comment|}}
-          {{> comments }}
+          {{> comment }}
       {{/each}}
   {{else}}
     <h3>Dang, nobody loves me enough to leave a comment. &#128517;</h3>
@@ -19,30 +18,29 @@
  </details>
 
 <article class="row">
-  <form id="comment-form" class="col s12">
+  <form id="comment-form" class="col s12 cust-forum">
     <section class="row">
-      <details class="input-field  col s6">
+      <div class="input-field  col s6">
         <input  placeholder="Placeholder" id="first_name" 
           type="text"  class="validate"/>
           <label  for="first_name">First Name</label>
-      </details>
+      </div>
     </section>
     <section class="row">
-      <details class="input-field col s12">
+      <div class="input-field col s12">
         <input  id="email"  type="email" class="validate" placeholder="You will never be contacted or added to a list.">
           <label for="email">Email</label>
-      </details>
+      </div>
     </section>
     <section class="row">
-      <details class="input-field col s12">
+      <div class="input-field col s12">
             <textarea id="comment" class="materialize-textarea" onkeyup="this.value = this.value.replace(/[*<>]/g, '')"></textarea>
-            <label for="textarea1">Any Comment is welcomed!
-            </label>
-      </details>
-      <button type="submit">Submit</button>
+            <label for="textarea1">Any Comment is welcomed!</label>
+      </div>
+      <button type="submit" class="btn btn-cust right">Submit</button>
     </section>
   </form>
 </article>
 
 
-<script src="/js/contact.js"></script>
+<script src="/js/forum.js"></script>

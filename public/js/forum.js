@@ -3,16 +3,14 @@ const newCommentHandler = async (event) => {
 
     const passedbody = document.querySelector('#comment').value.trim();
     const passedFName = document.querySelector("#first_name").value.trim();
-    const passedEmail = document.querySelector("#email").value.trim();
-
-
+ 
     if (passedbody && passedFName) {
-      const response = await fetch(`/api/comment/create`, {
+      const response = await fetch(`/api/forum/create`, {
         method: 'POST',
         body: JSON.stringify({          
-            body:passedbody,     
-            fName: passedFName, 
-            email: passedEmail}),
+            body: passedbody,     
+            fName: passedFName
+          }),
         headers: {
           'Content-Type': 'application/json',
         },

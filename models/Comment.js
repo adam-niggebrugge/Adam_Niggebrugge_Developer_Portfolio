@@ -17,13 +17,9 @@ Comment.init({
            len: [3]
         }
     },
-    user_id: {
-        type: DataTypes.INTEGER,
+    user_name: {
+        type: DataTypes.STRING,
         allowNull: false,
-        references: {
-            model: 'user',
-            key: 'id'
-        }
     },
 }, 
 {
