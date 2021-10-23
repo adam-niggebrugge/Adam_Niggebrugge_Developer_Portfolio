@@ -1,16 +1,25 @@
 <article  id="index-banner" class="container">
   <section  class="section no-pad-bot">
-    <details class="container">
+    
       <h2  class="header center offset-s2 page-title">Welcome, to my  
-      <span  class="header-name" >Review Form</span></h2>
+      <span  class="header-name" >Review Forum</span></h2>
       <p class="floq">This area is meant for comments from users, clients about what they like or dislike with my website design.</p>
-    </details>
+   
   </section>
 </article>
-
+<details class="container">
+  {{#if comments.length}}
+  
+      {{#each comments as |comment|}}
+          {{> comments }}
+      {{/each}}
+  {{else}}
+    <h3>Dang, nobody loves me enough to leave a comment. &#128517;</h3>
+  {{/if}}
+ </details>
 
 <article class="row">
-  <form  class="col s12">
+  <form id="comment-form" class="col s12">
     <section class="row">
       <details class="input-field  col s6">
         <input  placeholder="Placeholder" id="first_name" 
@@ -20,25 +29,20 @@
     </section>
     <section class="row">
       <details class="input-field col s12">
-        <input  id="email"  type="email" class="validate">
+        <input  id="email"  type="email" class="validate" placeholder="You will never be contacted or added to a list.">
           <label for="email">Email</label>
       </details>
     </section>
     <section class="row">
       <details class="input-field col s12">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <textarea id="comment" class="materialize-textarea" onkeyup="this.value = this.value.replace(/[*<>]/g, '')"></textarea>
             <label for="textarea1">Any Comment is welcomed!
             </label>
       </details>
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </section>
   </form>
 </article>
-{{#if comments.length}}
-    {{#each comments as |comment|}}
-        {{> comments }}
-    {{/each}}
 
-{{/if}}
 
 <script src="/js/contact.js"></script>
